@@ -1,0 +1,6 @@
+node_modules/
+*.json
+playground.js
+!exercises_list.json
+!package.json
+!package-lock.json

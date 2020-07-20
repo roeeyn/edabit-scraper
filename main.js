@@ -4,7 +4,7 @@ const { main } = require("./getCompleteExercise");
 const reduce = require("awaity/reduce");
 const mainScript = async () => {
   const finalExercises = await reduce.default(
-    exerciseList.filter((a, i) => i < 5),
+    exerciseList,
     async (carry, { url }, iteration, originalArray) => {
       console.log(`********************* ${url} *************************`);
       console.log(`******** ${iteration + 1}/${originalArray.length} ******`);

@@ -8,7 +8,8 @@ const mainScript = async () => {
     async (carry, { url }, iteration, originalArray) => {
       console.log(`********************* ${url} *************************`);
       console.log(`******** ${iteration + 1}/${originalArray.length} ******`);
-      const exerciseDetails = await main(url);
+      const mainExerciseDetails = await main(url);
+      const exerciseDetails = { ...mainExerciseDetails, url };
       console.log(exerciseDetails);
       const newCarry = [...carry, exerciseDetails];
       const jsonifiedCarry = JSON.stringify(newCarry, null, "\t");

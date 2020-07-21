@@ -1,7 +1,6 @@
 node_modules/
 *.json
 playground.js
-!exercises_list.json
-!complete_exercises.json
+!ut_*.json
 !package.json
 !package-lock.json

@@ -1,0 +1,828 @@
+[
+	{
+		"title": "Return the Next Number from the Integer Passed",
+		"description": "<p><span>Create a function that takes a number as an argument, increments the number by +1 and returns the result.</span></p><h3><span>Examples</span></h3><pre><code>addition(0) ➞ 1\n\naddition(9) ➞ 10\n\naddition(-3) ➞ -2</code></pre><h3><span>Notes</span></h3><ul><li><span>Don't forget to </span><code>return</code><span> the result.</span></li><li><span>If you get stuck on a challenge, find help in the </span><strong><span>Resources</span></strong><span> tab.</span></li><li><span>If you're </span><em><span>really</span></em><span> stuck, unlock solutions in the </span><strong><span>Solutions</span></strong><span> tab.</span></li></ul>",
+		"publishedBy": "Matt",
+		"publishedByUrl": "https://edabit.com/user/BkPgkDQGHm66X4Qai",
+		"language": "JavaScript",
+		"tags": [
+			"math",
+			"numbers"
+		],
+		"tests": [
+			"Test.assertEquals(addition(2), 3, \"2 plus 1 equals 3.\")",
+			"Test.assertEquals(addition(-9), -8, \"-8 plus 1 equals -9.\")",
+			"Test.assertEquals(addition(0), 1, \"0 plus 1 equals 1.\")",
+			"Test.assertEquals(addition(999), 1000, \"999 plus 1 equals 1000.\")",
+			"Test.assertEquals(addition(73), 74, \"73 plus 1 equals 74.\")"
+		],
+		"url": "https://edabit.com/challenge/NAQhEoxbofPidLxm9"
+	},
+	{
+		"title": "Equality Check",
+		"description": "<p><span>In this challenge, you must verify the equality of two different given parameters: </span><code>a</code><span> and </span><code>b</code><span>.</span></p><p><span>Both the value and the type of parameters need to be tested in order to have a matching equality. The possible types of the given parameters are:</span></p><ul><li><span>Numbers</span></li><li><span>Strings</span></li><li><span>Booleans (</span><code>false</code><span> or </span><code>true</code><span>)</span></li><li><span>Special values: </span><code>undefined</code><span>, </span><code>null</code><span> and </span><code>NaN</code></li></ul><p><span>What have you learned so far that will permit you to do two different checks (value </span><strong><span>and</span></strong><span> type) with a single statement?</span></p><p><span>Implement a function that returns </span><code>true</code><span> if the parameters are equal, and </span><code>false</code><span> if they are different.</span></p><h3><span>Examples</span></h3><pre><code>checkEquality(1, true) ➞ false\n// A number and a boolean: their type is different\n\ncheckEquality(0, \"0\") ➞ false\n// A number and a string: their type is different\n\ncheckEquality(1,  1) ➞ true\n// A number and a number: their type and value are equal</code></pre><h3><span>Notes</span></h3><ul><li><span>If you get stuck on a challenge, find help in the </span><strong><span>Resources</span></strong><span> tab.</span></li><li><span>If you're </span><em><span>really</span></em><span> stuck, unlock solutions in the </span><strong><span>Solutions</span></strong><span> tab.</span></li></ul>",
+		"publishedBy": "er0s",
+		"publishedByUrl": "https://edabit.com/user/5Zq3aGdvh4LHBvnJL",
+		"language": "JavaScript",
+		"tags": [
+			"language_fundamentals",
+			"logic",
+			"validation"
+		],
+		"tests": [
+			"Test.assertEquals(checkEquality(1, true), false, \"Example #1\")",
+			"Test.assertEquals(checkEquality(0, \"0\"), false, \"Example #2\")",
+			"Test.assertEquals(checkEquality(1, 1), true, \"Example #3\")",
+			"Test.assertEquals(checkEquality(0, \"\"), false)",
+			"Test.assertEquals(checkEquality(1, \"1\"), false)",
+			"Test.assertEquals(checkEquality(0, false), false)",
+			"Test.assertEquals(checkEquality(NaN, NaN), false)",
+			"Test.assertEquals(checkEquality(null, undefined), false)",
+			"Test.assertEquals(checkEquality(undefined, undefined), true)",
+			"Test.assertEquals(checkEquality(false, null), false)"
+		],
+		"url": "https://edabit.com/challenge/BGvTMfwxYDRbtaTJ3"
+	},
+	{
+		"title": "Is the Number Even or Odd?",
+		"description": "<p><span>Create a function that takes a number as an argument and returns </span><code>\"even\"</code><span> for even numbers and </span><code>\"odd\"</code><span> for odd numbers.</span></p><h3><span>Examples</span></h3><pre><code>isEvenOrOdd(3) ➞ \"odd\"\n\nisEvenOrOdd(146) ➞ \"even\"\n\nisEvenOrOdd(19) ➞ \"odd\"</code></pre><h3><span>Notes</span></h3><ul><li><span>Dont forget to </span><code>return</code><span> the result.</span></li><li><span>Input will always be a valid integer.</span></li><li><span>Expect negative integers (whole numbers).</span></li><li><span>Tests are case sensitive (return </span><code>\"even\"</code><span> or </span><code>\"odd\"</code><span> in lowercase).</span></li></ul>",
+		"publishedBy": "Matt",
+		"publishedByUrl": "https://edabit.com/user/BkPgkDQGHm66X4Qai",
+		"language": "JavaScript",
+		"tags": [
+			"conditions",
+			"math",
+			"numbers",
+			"validation"
+		],
+		"tests": [
+			"Test.assertEquals(isEvenOrOdd(3), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(0), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(7), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(12), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(6474), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(0563), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(3), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(0000001111100000), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(301), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(-3), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(-0), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(-7), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(-12), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(-6474), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(-0563), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(-3), \"odd\")",
+			"Test.assertEquals(isEvenOrOdd(-0000001111100000), \"even\")",
+			"Test.assertEquals(isEvenOrOdd(-301), \"odd\")"
+		],
+		"url": "https://edabit.com/challenge/kuzB5CMXiKDEYKXAP"
+	},
+	{
+		"title": "Next Element in Arithmetic Sequence",
+		"description": "<p><span>Create a function that returns the next element in an </span><strong><span>arithmetic sequence</span></strong><span>. In an arithmetic sequence, each element is formed by adding the same constant to the previous element.</span></p><h3><span>Examples</span></h3><pre><code>nextElement([3, 5, 7, 9]) ➞ 11\n\nnextElement([-5, -6, -7]) ➞ -8\n\nnextElement([2, 2, 2, 2, 2]) ➞ 2</code></pre><h3><span>Notes</span></h3><p><span>All input arrays will contain </span><strong><span>integers only</span></strong><span>.</span></p>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"math",
+			"numbers"
+		],
+		"tests": [
+			"Test.assertEquals(nextElement([3, 5, 7, 9]), 11) ",
+			"Test.assertEquals(nextElement([-5, -6, -7]), -8) ",
+			"Test.assertEquals(nextElement([2, 2, 2, 2, 2]), 2)"
+		],
+		"url": "https://edabit.com/challenge/dzdoYrTL5vws4dFud"
+	},
+	{
+		"title": "Edaaaaabit",
+		"description": "<p><span>Write a function that takes an integer and returns a string with the given number of </span><code>\"a\"</code><span>s in Edabit.</span></p><h3><span>Examples</span></h3><pre><code>howManyTimes(5) ➞ \"Edaaaaabit\"\n\nhowManyTimes(0) ➞ \"Edbit\"\n\nhowManyTimes(12) ➞ \"Edaaaaaaaaaaaabit\"</code></pre><h3><span>Notes</span></h3><ul><li><span>The string must start with \"Ed\" and end with \"bit\".</span></li><li><span>You'll only be given integers as test input.</span></li></ul>",
+		"publishedBy": "Qudusayo",
+		"publishedByUrl": "https://edabit.com/user/86Cs3P5qT5Pyrwhj7",
+		"language": "JavaScript",
+		"tags": [
+			"formatting",
+			"loops",
+			"recursion",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(howManyTimes(5), \"Edaaaaabit\")",
+			"Test.assertEquals(howManyTimes(15), \"Edaaaaaaaaaaaaaaabit\")",
+			"Test.assertEquals(howManyTimes(10), \"Edaaaaaaaaaabit\")",
+			"Test.assertEquals(howManyTimes(23), \"Edaaaaaaaaaaaaaaaaaaaaaaabit\")",
+			"Test.assertEquals(howManyTimes(1), \"Edabit\")"
+		],
+		"url": "https://edabit.com/challenge/tHZBvD3w69hpDCtMg"
+	},
+	{
+		"title": "Array of Multiples",
+		"description": "<p><span>Create a function that takes two numbers as arguments (</span><code>num</code><span>, </span><code>length</code><span>) and returns an array of multiples of </span><code>num</code><span> up to </span><code>length</code><span>.</span></p><h3><span>Examples</span></h3><pre><code>arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]\n\narrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]\n\narrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]</code></pre><h3><span>Notes</span></h3><p><span>Notice that </span><code>num</code><span> is also included in the returned array.</span></p>",
+		"publishedBy": "Raka Raka",
+		"publishedByUrl": "https://edabit.com/user/AXcnPX68zdMiLNSmu",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"numbers"
+		],
+		"tests": [
+			"Test.assertSimilar(arrayOfMultiples(7, 5), [7, 14, 21, 28, 35])",
+			"Test.assertSimilar(arrayOfMultiples(12, 10), [12, 24, 36, 48, 60, 72, 84, 96, 108, 120])",
+			"Test.assertSimilar(arrayOfMultiples(17, 7), [17, 34, 51, 68, 85, 102, 119])",
+			"Test.assertSimilar(arrayOfMultiples(630, 14), [630, 1260, 1890, 2520, 3150, 3780, 4410, 5040, 5670, 6300, 6930, 7560, 8190, 8820])",
+			"Test.assertSimilar(arrayOfMultiples(140, 3), [140, 280, 420])",
+			"Test.assertSimilar(arrayOfMultiples(7, 8), [7, 14, 21, 28, 35, 42, 49, 56])",
+			"Test.assertSimilar(arrayOfMultiples(11, 21), [11, 22, 33, 44, 55, 66, 77, 88, 99, 110, 121, 132, 143, 154, 165, 176, 187, 198, 209, 220, 231])"
+		],
+		"url": "https://edabit.com/challenge/ebcd4Xu8TLizaj6dm"
+	},
+	{
+		"title": "RegEx: Character Classes XII ⁠- \\t",
+		"description": "<p><span>You can think of character classes as characters with special meaning. They are recognized as special when you place the </span><code>\\</code><span> before the character.</span></p><p><span>Here are a list of the characters classes in JavaScript:</span></p><pre><code>., \\cX, \\d, \\D, \\f, \\n, \\r, \\s, \\S, \\t, \\v, \\w, \\W, \\0, \\xhh, \\uhhhh, \\uhhhhh, [\\b]</code></pre><p><span>We have the </span><code>\\t</code><span> and </span><code>\\v</code><span> character classes that match any tabs in a string. But more specifically </span><code>\\t</code><span> is used to match </span><strong><span>horizontal tabs</span></strong><span> while </span><code>\\v</code><span> matches </span><strong><span>vertical tabs</span></strong><span>.  Vertical tabs were once a thing but are rarely used anymore. We generally use horizontal tabs which are produced by the </span><strong><span>tab</span></strong><span> key on our keyboards.</span></p><p><span>Find how many tabs with one </span><strong><span>literal</span></strong><span> whitespace immediately following the tab are in a string.</span></p><h3><span>Notes</span></h3><ul><li><span>Not all whitespaces are the same.</span></li><li><span>See </span><strong><span>Resources</span></strong><span> for help.</span></li></ul>",
+		"publishedBy": "Isaac Pak",
+		"publishedByUrl": "https://edabit.com/user/yaL57wdXmgAZTvKfX",
+		"language": "JavaScript",
+		"tags": [
+			"regex"
+		],
+		"tests": [
+			"const str = `What ",
+			"about ",
+			"me?  `",
+			"​",
+			"const validate = (REGEXP) => {",
+			"   if(!/\\\\t/.test(String(REGEXP))) return () => \"invalid\" ",
+			"   return function testReg(str) {",
+			"     return str.match(REGEXP).length",
+			"   }",
+			"}",
+			"​",
+			"const testExp = validate(REGEXP)",
+			"​",
+			"Test.assertNotEquals(testExp(str), \"invalid\", \"You are required to use a \\\\t character class in your expression.\")",
+			"Test.assertEquals(testExp(str), 1, \"There is only one LITERAL white space in this string.\") ",
+			"​",
+			"// Credit goes to DeltaTango and Alnitak from SO"
+		],
+		"url": "https://edabit.com/challenge/w2abzEMHE7SFLQzDq"
+	},
+	{
+		"title": "Reverse the Order of Words with Five Letters or More",
+		"description": "<p><span>Write a function that takes a string of one or more words as an argument and returns the same string, but with all five or more letter words reversed. Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.</span></p><h3><span>Examples</span></h3><pre><code>reverse(\"Reverse\") ➞ \"esreveR\"\n\nreverse(\"This is a typical sentence.\") ➞ \"This is a lacipyt .ecnetnes\"\n\nreverse(\"The dog is big.\") ➞ \"The dog is big.\"</code></pre><h3><span>Notes</span></h3><p><span>You can expect a valid string to be provided for each test case.</span></p>",
+		"publishedBy": "Matt",
+		"publishedByUrl": "https://edabit.com/user/BkPgkDQGHm66X4Qai",
+		"language": "JavaScript",
+		"tags": [
+			"formatting",
+			"regex",
+			"sorting",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(reverse(\"Reverse\"), \"esreveR\");",
+			"Test.assertEquals(reverse(\"This is a typical sentence.\"), \"This is a lacipyt .ecnetnes\");",
+			"Test.assertEquals(reverse(\"The dog is big.\"), \"The dog is big.\");",
+			"Test.assertEquals(reverse(\"Reverse the order of every word greater than or equal to five characters.\"), \"esreveR the redro of yreve word retaerg than or lauqe to five .sretcarahc\");",
+			"Test.assertEquals(reverse(\"Lets all be unique together until we realise we are all the same.\"), \"Lets all be euqinu rehtegot litnu we esilaer we are all the .emas\");",
+			"Test.assertEquals(reverse(\"The old apple revels in its authority.\"), \"The old elppa slever in its .ytirohtua\");",
+			"Test.assertEquals(reverse(\"The shooter says goodbye to his love.\"), \"The retoohs says eybdoog to his .evol\");",
+			"Test.assertEquals(reverse(\"Please wait outside of the house.\"), \"esaelP wait edistuo of the .esuoh\");",
+			"Test.assertEquals(reverse(\"Two seats were vacant.\"), \"Two staes were .tnacav\");",
+			"Test.assertEquals(reverse(\"Sixty-Four comes asking for bread.\"), \"ruoF-ytxiS semoc gniksa for .daerb\");"
+		],
+		"url": "https://edabit.com/challenge/wPNzJEJebN2mewcqY"
+	},
+	{
+		"title": "Slidey Numbers",
+		"description": "<p><span>A number is considered </span><em><span>slidey</span></em><span> if for every digit in the number, the next digit from that has an absolute difference of one. Check the examples below.</span></p><h3><span>Examples</span></h3><pre><code>isSlidey(123454321) ➞ true\n\nisSlidey(54345) ➞ true\n\nisSlidey(987654321) ➞ true\n\nisSlidey(1123) ➞ false\n\nisSlidey(1357) ➞ false</code></pre><h3><span>Notes</span></h3><ul><li><span>A number cannot slide properly if there is a \"flat surface\" (example #4), or has gaps (example #5).</span></li><li><span>All single digit numbers can be considered </span><em><span>slidey numbers</span></em><span>!</span></li></ul>",
+		"publishedBy": "er0s",
+		"publishedByUrl": "https://edabit.com/user/5Zq3aGdvh4LHBvnJL",
+		"language": "JavaScript",
+		"tags": [
+			"numbers",
+			"validation"
+		],
+		"tests": [
+			"Test.assertEquals(isSlidey(123454321), true)",
+			"Test.assertEquals(isSlidey(54345), true)",
+			"Test.assertEquals(isSlidey(987654321), true)",
+			"Test.assertEquals(isSlidey(1123), false)",
+			"Test.assertEquals(isSlidey(1357), false)",
+			"Test.assertEquals(isSlidey(1), true)",
+			"Test.assertEquals(isSlidey(0), true)",
+			"Test.assertEquals(isSlidey(13578987), false)",
+			"Test.assertEquals(isSlidey(232323232), true)",
+			"Test.assertEquals(isSlidey(2323232322), false)",
+			"Test.assertEquals(isSlidey(2343456567878), true)",
+			"Test.assertEquals(isSlidey(999999999999), false)",
+			"Test.assertEquals(isSlidey(223322332233), false)",
+			"Test.assertEquals(isSlidey(7766554433), false)",
+			"Test.assertEquals(isSlidey(32), true)",
+			"Test.assertEquals(isSlidey(21), true)",
+			"Test.assertEquals(isSlidey(33), false)",
+			"Test.assertEquals(isSlidey(30), false)",
+			"​",
+			"// made by @Joshua Señoron"
+		],
+		"url": "https://edabit.com/challenge/EmRbDHpexaHaLeWHo"
+	},
+	{
+		"title": "Fix The Error: Array Reduce",
+		"description": "<p><span>The  instructor assigns Boron two tasks (regarding the use of </span><code>reduce()</code><span> method after lecturing in array methods).</span></p><ol><li><span>The first task is to create a function </span><code>calculateSum()</code><span> that takes a string and returns the sum of the ASCII values of all the characters in the string  using </span><code>reduce()</code><span>.</span></li><li><span>The second task is to create a function </span><code>reverseString()</code><span> that reverses and returns an input string using </span><code>reduce()</code><span>.</span></li></ol><p><span>While solving the problem, Boron has encountered errors. Help him fix the errors.</span></p><h3><span>Examples</span></h3><pre><code>calculateSum(\"lime\") ➞ 423\n// 108 + 105 + 109 + 101 = 423\n\ncalculateSum(\"a\") ➞ 97\n// a = 97\n\nreverseString(\"hello\") ➞ \"olleh\"</code></pre><h3><span>Notes</span></h3><p><span>N/A</span></p>",
+		"publishedBy": "BijogFc24",
+		"publishedByUrl": "https://edabit.com/user/Nb6LYPoQP6KJZt8mz",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"bugs",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(calculateSum(\"orange\"), 636)",
+			"Test.assertEquals(calculateSum(\"lime\"), 423)",
+			"Test.assertEquals(calculateSum(\"mushroom\"), 890)",
+			"Test.assertEquals(reverseString(\"Think\"), \"knihT\")",
+			"Test.assertEquals(reverseString(\"world\"), \"dlrow\")",
+			"Test.assertEquals(reverseString(\"people\"), \"elpoep\")"
+		],
+		"url": "https://edabit.com/challenge/pzv7pwMeXnF5aZMfQ"
+	},
+	{
+		"title": "Spicy Food",
+		"description": "<p><span>The facts are:</span></p><ol><li><span>You've just finished dinner.</span></li><li><span>You love spicy food but your friend hates it.</span></li></ol><p><span>Given your friend's unfortunate taste preferences, you decide to </span><strong><span>split the bill only for non-spicy items</span></strong><span>. You will pay in full for the spicy dishes.</span></p><p><span>Given two ordered arrays, one classifying the dishes as spicy vs. non-spicy and the other listing their prices, write a function that outputs an array where the first element is </span><strong><span>how much you pay</span></strong><span> and the second element is </span><strong><span>how much your friend pays</span></strong><span>.</span></p><pre><code>billSplit([\"S\", \"N\", \"S\", \"S\"], [13, 18, 15, 4]) ➞ [41, 9]\n\n// Since:\n// You pay: [13, 9, 15, 4] = 41\n// Friend pays: [0, 9, 0, 0] = 9</code></pre><h3><span>Examples</span></h3><pre><code>billSplit([\"N\", \"S\", \"N\"], [10, 10, 20]) ➞ [25, 15]\n// You pay for half of both \"N\" dishes (5 + 10) and entirely pay for the \"S\" dish (10).\n\nbillSplit([\"N\", \"N\"], [10, 10]) ➞ [10, 10]\n\nbillSplit([\"S\", \"N\"], [41, 10]) ➞ [46, 5]</code></pre><h3><span>Notes</span></h3><ul><li><span>The dishes are in the same order for both input arrays.</span></li><li><span>Remember to output an array in this order: </span><code>[your payment, friend's payment]</code></li><li><span>The array will contain at least one non-spicy dish </span><code>N</code><span> (you're not going to let your poor friend go hungry, are you?).</span></li><li><span>Express both payments as integers.</span></li></ul>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"higher_order_functions"
+		],
+		"tests": [
+			"Test.assertSimilar(billSplit(['N', 'S', 'N'], [10, 10, 20]), [25, 15])",
+			"Test.assertSimilar(billSplit(['N', 'N'], [10, 10]), [10, 10])",
+			"Test.assertSimilar(billSplit(['S', 'N'], [41, 10]), [46, 5])",
+			"Test.assertSimilar(billSplit(['S', 'S', 'S', 'N', 'N'], [8, 9, 8, 7, 7]), [32, 7])",
+			"Test.assertSimilar(billSplit(['N', 'N', 'N', 'S'], [40, 20, 20, 10]), [50, 40])"
+		],
+		"url": "https://edabit.com/challenge/WoFZTyrayj9f2FPwD"
+	},
+	{
+		"title": "N-Sized Parts",
+		"description": "<p><span>Create a function that divides a string into parts of size </span><code>n</code><span>.</span></p><h3><span>Examples</span></h3><pre><code>partition(\"chew\", 2) ➞ [\"ch\", \"ew\"]\n\npartition(\"thematic\", 4) ➞ [\"them\", \"atic\"]\n\npartition(\"c++\", 2) ➞ [\"c+\", \"+\"]</code></pre><h3><span>Notes</span></h3><p><span>For inputs that do not split evenly into parts of size </span><code>n</code><span>, the last element in the array will have a \"leftover\" string (see example #3).</span></p>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"strings"
+		],
+		"tests": [
+			"Test.assertSimilar(partition(\"them\", 2), [\"th\", \"em\"])",
+			"Test.assertSimilar(partition(\"thematic\", 4), [\"them\", \"atic\"])",
+			"Test.assertSimilar(partition(\"movement\", 2), [\"mo\", \"ve\", \"me\", \"nt\"])",
+			"Test.assertSimilar(partition(\"python\", 2), [\"py\", \"th\", \"on\"])",
+			"Test.assertSimilar(partition(\"c++\", 2), [\"c+\", \"+\"])"
+		],
+		"url": "https://edabit.com/challenge/yffZ8xYon38AnH6J5"
+	},
+	{
+		"title": "The Recamán Sequence",
+		"description": "<p><span>The Recamán Sequence is a numeric sequence that starts always with 0. The position of a positive integer in the sequence, or Recamán Index, can be established with the following algorithm:</span></p><ul><li><span>For every number to find, two variables are considered: the value of the last element of the sequence (last element from now on), and the actual sequence length (length from now on).</span></li><li><span>If the subtraction of the length from the last element returns a number  </span><strong><span>greater than 0 and not already present in the sequence</span></strong><span>, it is added to the sequence.</span></li><li><span>When the conditions of the above statement are not met, will be added always the sum of the last element plus the length (even if it is a number already present in the sequence).</span></li><li><span>Repeat until the number of interest is found.</span></li></ul><p><span>Look at example below for the steps to do for to establish the Recamán Index of number 2:</span></p><pre><code>Sequence = [0]\n\nLast - Length = 0 - 1 = -1 (lower than zero)\nLast + Length = 0 + 1 = 1\n\nSequence = [0, 1]\n\nLast - Length = 1 - 2 = -1 (lower than 0)\nLast + Length = 1 + 2 = 3\n\nSequence = [0, 1, 3]\n\nLast - Length = 3 - 3 = 0 (already present in sequence)\nLast + Length = 3 + 3 = 6\n\nSequence = [0, 1, 3, 6]\n\nLast - Length = 6 - 4 = 2 (greater than 0 and not already in sequence)\n\nSequence = [0, 1, 3, 6, 2]\n\n// The Recaman Index of 2 is: 4</code></pre><p><span>Given a positive integer </span><code>n</code><span>, implement a function that returns its Recamán Index.</span></p><h3><span>Examples</span></h3><pre><code>recamanIndex(2) ➞ 4\n\nrecamanIndex(3) ➞ 2\n\nrecamanIndex(7) ➞ 5</code></pre><h3><span>Notes</span></h3><ul><li><span>The sequence starts always with 0.</span></li><li><span>The step with the subtraction Last Element - Sequence Length (verifying that is not already present in the sequence) has the precedence over the second step.</span></li><li><span>Remember: if the number to add is the result of a subtraction it can't be already in the sequence (</span><em><span>first step</span></em><span>), if it is the result of an addition it can be already present (</span><em><span>second step</span></em><span>).</span></li><li><span>Curiosity: the first number to repeat in the sequence is 42...</span></li><li><span>Curiosity: the first number with a </span><em><span>BIG</span></em><span> delay in the sequence is 19.</span></li></ul>",
+		"publishedBy": "er0s",
+		"publishedByUrl": "https://edabit.com/user/5Zq3aGdvh4LHBvnJL",
+		"language": "JavaScript",
+		"tags": [
+			"algorithms",
+			"loops",
+			"numbers"
+		],
+		"tests": [
+			"Test.assertEquals(recamanIndex(2), 4, \"Example explained in Instructions\")",
+			"Test.assertEquals(recamanIndex(3), 2)",
+			"Test.assertEquals(recamanIndex(7), 5)",
+			"Test.assertEquals(recamanIndex(20), 7)",
+			"Test.assertEquals(recamanIndex(56), 204)",
+			"Test.assertEquals(recamanIndex(100), 387)",
+			"Test.assertEquals(recamanIndex(666), 2292)",
+			"Test.assertEquals(recamanIndex(1000), 4419)",
+			"Test.assertEquals(recamanIndex(10000), 7215)"
+		],
+		"url": "https://edabit.com/challenge/jDtwBwYhaMD2HftdX"
+	},
+	{
+		"title": "The Snake — Area Filling",
+		"description": "<p><span>Assuming that you know the popular game \"Snake\", you have an area of x</span><span>*</span><span>x, the snake length is 1 (only the head) and is positioned in the top left corner of the area at the beginning which means if your area is 7</span><span>*</span><span>7 it will look something like this:</span></p><p><span> </span><img src=\"https://i.imgur.com/glbiwtu.png\"></p><p><span>Knowing that each time the snake eats the food his length will be 2 times longer (so if the length of the snake is 4, after eating it will be 8), you have to create a function that takes a number as an argument and returns how many times the snake needs to eat to fill the entire area.</span></p><h3><span>Examples</span></h3><pre><code>snakefill(3) ➞ 3\n\nsnakefill(6) ➞ 5\n\nsnakefill(24) ➞ 9</code></pre><h3><span>Notes</span></h3><ul><li><span>The argument is the length of a side of the area which mean that if the given number is 6 your area will be of 6*6.</span></li><li><span>The snake can exceed the borders</span></li><li><span>The given number can't be a float.</span></li><li><span>The given number is always positive.</span></li></ul>",
+		"publishedBy": "Blackomodo",
+		"publishedByUrl": "https://edabit.com/user/7QcY3CLdo8PehxXwd",
+		"language": "JavaScript",
+		"tags": [
+			"algorithms",
+			"logic",
+			"math"
+		],
+		"tests": [
+			"Test.assertEquals(snakefill(8), 6)",
+			"Test.assertEquals(snakefill(18), 8)",
+			"Test.assertEquals(snakefill(555), 18)",
+			"Test.assertEquals(snakefill(2), 2)",
+			"Test.assertEquals(snakefill(1), 0)",
+			"Test.assertEquals(snakefill(900), 19)"
+		],
+		"url": "https://edabit.com/challenge/gQuex4Ldsohmzscb3"
+	},
+	{
+		"title": "Clear Brackets",
+		"description": "<p><span>Create a function </span><code>brackets()</code><span> that takes a </span><strong><span>string</span></strong><span> and checks that the brackets in the math expression are correct. The function should return </span><code>true</code><span> or </span><code>false</code><span>.</span></p><h3><span>Examples</span></h3><pre><code>brackets(\"(a*(b-c)..... )\") ➞ true\n\nbrackets(\")(a-b-45/7*(a-34))\") ➞ false\n\nbrackets(\"sin(90...)+.............cos1)\") ➞ false</code></pre><h3><span>Notes</span></h3><ul><li><span>The string may </span><strong><span>not contain brackets</span></strong><span>, then return </span><code>true</code><span>.</span></li><li><span>String may contain </span><strong><span>spaces</span></strong><span>.</span></li><li><span>The string may be </span><strong><span>empty</span></strong><span>.</span></li></ul>",
+		"publishedBy": "BlackJack007",
+		"publishedByUrl": "https://edabit.com/user/3qfdbT7qWZLXAZe5W",
+		"language": "JavaScript",
+		"tags": [
+			"logic",
+			"strings",
+			"validation"
+		],
+		"tests": [
+			"Test.assertEquals(brackets(\"(a*(b-c)     )\"), true);",
+			"Test.assertEquals(brackets(\" ) (a-b-45/7*(a-34))\"), false);",
+			"Test.assertEquals(brackets(\"sin(90       )+      cos1)\"), false);",
+			"Test.assertEquals(brackets(\" (...). .%_.(.... )\"), true);",
+			"Test.assertEquals(brackets(\" (...)...(..(...).... )  \"), true);",
+			"Test.assertEquals(brackets(\") .. .() (        ).. . (\"), false);",
+			"Test.assertEquals(brackets(\")))(((\"), false);",
+			"Test.assertEquals(brackets(\"  (...).!.)...(\"), false);",
+			"Test.assertEquals(brackets(\"a+b\"), true);",
+			"Test.assertEquals(brackets(\"\"), true);",
+			"Test.assertEquals(brackets(\"(a+f).`!£=.)...) \"), false);"
+		],
+		"url": "https://edabit.com/challenge/AcN98uNF2MmQ7jJJH"
+	},
+	{
+		"title": "Zipping Up an Array",
+		"description": "<p><span>Two arrays are part of the same </span><strong><span>zipper</span></strong><span> if the ending is identical. The identical section can be thought of as being \"zipped-up\". Below, </span><code>[2, 2, 4]</code><span> is \"zipped-up\".</span></p><pre><code>Array 1: [3, 5, 8, 9, 2, 2, 4]\nArray 2: [1, 7, 2, 2, 4]</code></pre><p><span>Create a function that takes in two arrays. Return </span><code>false</code><span> if none of the array is \"zipped.\" Return </span><code>true</code><span> if the arrays are identical. Otherwise, return an array with the first index in each array where the zipper diverges.</span></p><p><span>To illustrate:</span></p><pre><code>zipper([3, 5, 8, 9, 2, 2, 4], [1, 7, 2, 2, 4]) ➞ [3, 1]\n// Zipper 1: 9 (index-3) is first element to diverge.\n// Zipper 2: 7 (index-1) is first element to diverge.</code></pre><h3><span>Examples</span></h3><pre><code>zipper([5, 5, 7, 8, 9, 1, 2], [3, 2, 1, 1, 6, 6, 6, 6, 1, 2]) ➞ [4, 7]\n\nzipper([5, 4, 3, 2, 6], [6, 4, 3, 2, 6]) ➞ [0, 0]\n\nzipper([5, 4, 3, 2, 7], [6, 4, 3, 2, 6]) ➞ false\n\nzipper([5, 4, 3, 2, 6], [5, 4, 3, 2, 6]) ➞ true</code></pre><h3><span>Notes</span></h3><p><span>Use zero-indexing for the arrays.</span></p>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"control_flow"
+		],
+		"tests": [
+			"Test.assertSimilar(zipper([5, 5, 7, 8, 9, 1, 2], [3, 2, 1, 1, 6, 6, 6, 6, 1, 2]), [4, 7])",
+			"Test.assertSimilar(zipper([5, 4, 3, 2, 6], [6, 4, 3, 2, 6]), [0, 0])",
+			"Test.assertSimilar(zipper([5, 4, 3, 2, 7], [6, 4, 3, 2, 6]), false)",
+			"Test.assertSimilar(zipper([1, 5, 4, 3], [9, 8, 7, 5, 4, 3]), [0, 2])",
+			"Test.assertSimilar(zipper([7, 8, 9, 9, 9], [8, 8, 9, 9, 9, 9, 9]), [1, 3])",
+			"Test.assertSimilar(zipper([7, 8, 5, 1, 5], [6, 6, 5, 1, 5]), [1, 1])",
+			"Test.assertSimilar(zipper([6, 6, 5, 1, 5], [6, 6, 5, 1, 5]), true)",
+			"Test.assertSimilar(zipper([1, 1, 2, 6, 6, 5, 1, 5], [7, 8, 9, 4, 4, 6, 6, 5, 1, 5]), [2, 4])"
+		],
+		"url": "https://edabit.com/challenge/KJDD2N2putddr5vp3"
+	},
+	{
+		"title": "Ice Cream Stand",
+		"description": "<p><span>For this question, treat people as existing only on integers.</span></p><p><span>Two ice cream stands: </span><code>A</code><span> and </span><code>B</code><span> each occupy a spot on the beach, from </span><code>[0, 100]</code><span>. Their positions are represented with coordinates </span><code>(A, B)</code><span>. One position could be:</span></p><pre><code>[32, 69]</code></pre><p><span>People are distributed equally from </span><code>[0, 100]</code><span>, and will purchase ice cream  from the stand closest to them.</span></p><p><span>For </span><code>(A, B)</code><span> above, we have that  everyone from</span><code>[0, 50]</code><span> goes to </span><code>A</code><span> and everyone from </span><code>[51, 100]</code><span> goes to </span><code>B</code><span>. People on 50 will go to </span><code>A</code><span> because </span><strong><span>|50 - 32| = 18 &lt; 19 = |50 - 69|</span></strong><span>, and people on 51 will go to </span><code>B</code><span> because </span><strong><span>|51 - 69| = 18 &lt; 19 = |51 - 32| </span></strong><span>.</span></p><pre><code>profit = total number of integers claimed by the ice cream stand</code></pre><p><span>Write a function that calculates the profit for each ice cream stand based on their position. For the example above,  </span><code>profit(32, 69) = [51, 50]</code><span>.</span></p><p><span>Disregard ties. For instance, if </span><code>(A, B) = (49, 51)</code><span>, disregard the person on </span><code>50</code><span>. Profit is equally distributed in this case, with </span><code>profit(49, 51) = [50, 50]</code><span>.</span></p><h3><span>Examples</span></h3><pre><code>profit(32, 69) ➞ [51, 50]\n\nprofit(49, 51) ➞ [50, 50]\n\nprofit(0, 1) ➞ [1, 100]</code></pre><h3><span>Notes</span></h3><ul><li><code>A</code><span> &lt; </span><code>B</code><span> will always be true.</span></li><li><code>A</code><span> and </span><code>B</code><span> will never occupy the same spot.</span></li></ul>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"math"
+		],
+		"tests": [
+			"Test.assertSimilar(profit(32, 69), [51, 50])",
+			"Test.assertSimilar(profit(49, 51), [50, 50])",
+			"Test.assertSimilar(profit(25, 26), [26, 75])",
+			"Test.assertSimilar(profit(24, 26), [25, 75])",
+			"Test.assertSimilar(profit(0, 1), [1, 100])",
+			"Test.assertSimilar(profit(3, 6), [5, 96])",
+			"Test.assertSimilar(profit(55, 65), [60, 40])",
+			"Test.assertSimilar(profit(25, 75), [50, 50])"
+		],
+		"url": "https://edabit.com/challenge/aJHPftoXzexJMcoPf"
+	},
+	{
+		"title": "Current Streak",
+		"description": "<p><span>Create a function that takes the current day (e.g. </span><code>\"2019-09-30\"</code><span>), an array of date objects and returns the \"current streak\" (i.e. number of consecutive days in a row).</span></p><h3><span>Examples</span></h3><pre><code>currentStreak(\"2019-09-23\", [\n  {\n    \"date\": \"2019-09-18\"\n  },\n  {\n    \"date\": \"2019-09-19\"\n  },\n  {\n    \"date\": \"2019-09-21\"\n  },\n  {\n    \"date\": \"2019-09-22\"\n  },\n  {\n    \"date\": \"2019-09-23\"\n  }\n]) ➞ 3\n\ncurrentStreak(\"2019-09-25\", [\n  {\n    \"date\": \"2019-09-16\"\n  },\n  {\n    \"date\": \"2019-09-17\"\n  },\n  {\n    \"date\": \"2019-09-21\"\n  },\n  {\n    \"date\": \"2019-09-22\"\n  },\n  {\n    \"date\": \"2019-09-23\"\n  }\n]) ➞ 0</code></pre><h3><span>Notes</span></h3><ul><li><span>The array of dates is sorted chronologically.</span></li><li><span>The </span><code>today</code><span> parameter will always be greater than or equal to the last date in the array.</span></li><li><span>An empty array should return </span><code>0</code><span>.</span></li></ul>",
+		"publishedBy": "Matt",
+		"publishedByUrl": "https://edabit.com/user/BkPgkDQGHm66X4Qai",
+		"language": "JavaScript",
+		"tags": [
+			"dates",
+			"games",
+			"loops",
+			"objects"
+		],
+		"tests": [
+			"Test.assertEquals(currentStreak(\"1985-03-19\", [",
+			"  {",
+			"    \"date\": \"1985-03-19\"",
+			"  }",
+			"]), 1)",
+			"​",
+			"Test.assertEquals(currentStreak(\"2019-09-23\", [",
+			"  {",
+			"    \"date\": \"2019-09-18\"",
+			"  },",
+			"  {",
+			"    \"date\": \"2019-09-19\"",
+			"  },",
+			"  {",
+			"    \"date\": \"2019-09-21\"",
+			"  },",
+			"  {",
+			"    \"date\": \"2019-09-22\"",
+			"  },",
+			"  {",
+			"    \"date\": \"2019-09-23\"",
+			"  }",
+			"]), 3)",
+			"​",
+			"Test.assertEquals(currentStreak(\"2019-09-30\", [",
+			"  {"
+		],
+		"url": "https://edabit.com/challenge/QxdWqug8d8vkMtobH"
+	},
+	{
+		"title": "Roundabout",
+		"description": "<p><span>You are driving in a roundabout. At the moment you enter, you don't know which one of the exits you have to take. At the moment your GPS (or the person next to you) shouts that you should leave the roundabout, there's a moment of time where you need to react, turn on your indicator light, and exit the roundabout.</span></p><p><span>Assuming the roundabouts are of equal size, the exits are equally spaced and you're driving at the same speed, you need to figure out the exit you're taking. Your function will get the amount of exits of the roundabout. You're entering the roundabout on \"Exit 0\".</span></p><p><span>The next input will be the amount of degrees where you get the command to leave the roundabout. The time you have to react will be 30 degrees on the roundabout, so you cannot exit immediately.</span></p><h3><span>Examples</span></h3><pre><code>roundabout(4, 50) ➞ \"Exit 1\"\n\nroundabout(4, 320) ➞ \"Exit 0\"\n\nroundabout(6, 60) ➞ \"Exit 2\"</code></pre><h3><span>Notes</span></h3><ul><li><span>You'll be driving clockwise within the roundabout.</span></li><li><span>Sometimes you have to take the roundabout more than once.</span></li></ul>",
+		"publishedBy": "Ruud Peter Boelens",
+		"publishedByUrl": "https://edabit.com/user/Akq3fQcPRgPrWfsye",
+		"language": "JavaScript",
+		"tags": [
+			"algorithms",
+			"math",
+			"numbers"
+		],
+		"tests": [
+			"Test.assertEquals(roundabout(4, 50), \"Exit 1\")",
+			"Test.assertEquals(roundabout(3, 180), \"Exit 2\")",
+			"Test.assertEquals(roundabout(6, 360), \"Exit 1\")",
+			"Test.assertEquals(roundabout(3, 100), \"Exit 2\")",
+			"Test.assertEquals(roundabout(5, 100), \"Exit 2\")",
+			"Test.assertEquals(roundabout(4, 320), \"Exit 0\")",
+			"Test.assertEquals(roundabout(2, 180), \"Exit 0\")",
+			"Test.assertEquals(roundabout(6, 250), \"Exit 5\")",
+			"Test.assertEquals(roundabout(4, 61), \"Exit 2\")",
+			"Test.assertEquals(roundabout(3, 0), \"Exit 1\")",
+			"Test.assertEquals(roundabout(4, 500), \"Exit 2\")",
+			"Test.assertEquals(roundabout(3, 68), \"Exit 1\")",
+			"Test.assertEquals(roundabout(5, 40), \"Exit 1\")",
+			"Test.assertEquals(roundabout(6, 60), \"Exit 2\")"
+		],
+		"url": "https://edabit.com/challenge/oXBcQsTa6bXoKwY6b"
+	},
+	{
+		"title": "Content Analyzer",
+		"description": "<p><span>Create a function that takes a string and returns an object. The returned object will have a common property for all detected type content named </span><code>contentType</code><span> the possible values for this property are \"HTML\", \"CSS\", \"TEXT\".</span></p><ul><li><span>Your function should be able to detect HTML and CSS else it's just TEXT.</span></li><li><span>If you detect HTML the returned object will have a special property named \"tags\". \"tags\" is an object with all content tags name and how many times these tags were called in content (see example #3).</span></li><li><span>If you detect CSS, your returned object will have a special property named </span><code>cssTargets</code><span>. </span><code>cssTargets</code><span> is an object with all content targets name and how many times these tags were called in content (see example #2).</span></li><li><span>If you don't detect HTML or CSS, the content is detected as TEXT and object will have a special property named </span><code>lineNumber</code><span> (see example #1).</span></li></ul><h3><span>Examples</span></h3><pre><code>analyzeContent(\"this is a test\\nSeems to work\")\n➞ { contentType: \"TEXT\", lineNumber: 2 }\n\nanalyzeContent(\"body{blabla} a{color:#fff} a{ padding:0}\")\n➞ { contentType: \"CSS\", cssTargets: { body: 1, a: 2 } }\n\nanalyzeContent(\"&lt;html&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/html&gt;\")\n➞ { contentType: \"HTML\", tags: { html: 1, div: 2 } }</code></pre><h3><span>Notes</span></h3><ul><li><span>If HTML content has been detected the returned object couldn't have </span><code>cssTargets</code><span> property and </span><code>lineNumber</code><span> property and that's same for type of detection. Only the common proprety </span><code>contentType</code><span> stay inside the returned object.</span></li><li><code>&lt;!DOCTYPE html&gt;</code><span> and comments shoudn't be detected.</span></li><li><span>The content can be minified or not as needed.</span></li></ul>",
+		"publishedBy": "0osh4d0wo0",
+		"publishedByUrl": "https://edabit.com/user/XHngE5iScvztMpnR2",
+		"language": "JavaScript",
+		"tags": [
+			"conditions",
+			"objects",
+			"regex",
+			"strings"
+		],
+		"tests": [
+			"var c1 = `<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"​",
+			"<meta charset=\"UTF-8\">",
+			"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">",
+			"<meta name=\"description\" content=\"\">",
+			"<meta name=\"keywords\" content=\"\">",
+			"<meta name=\"author\" content=\"\">",
+			"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">",
+			"​",
+			"<title>Magnet - Minimal Portfolio Template</title>",
+			"​",
+			"<link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">",
+			"<link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">",
+			"​",
+			"<!-- Main css -->",
+			"<link rel=\"stylesheet\" href=\"css/style.css\">",
+			"<link href=\"https://fonts.googleapis.com/css?family=Work+Sans:300,400,700\" rel=\"stylesheet\">",
+			"​",
+			"</head>",
+			"<body>",
+			"​",
+			"<!-- PRE LOADER -->",
+			"​",
+			"<div class=\"preloader\">"
+		],
+		"url": "https://edabit.com/challenge/283cCDwXgNQvkdanj"
+	},
+	{
+		"title": "Rolling Cipher",
+		"description": "<p><span>Write a function that accepts a string and an </span><code>n</code><span> and returns a cipher by rolling each character forward (</span><code>n &gt; 0</code><span>) or backward (</span><code>n &lt; 0</code><span>) </span><strong><span>n</span></strong><span> times.</span></p><p><span>Note: Think of the letters as a connected loop, so rolling </span><code>a</code><span> backwards once will yield </span><code>z</code><span>, and rolling </span><code>z</code><span> forward once will yield </span><code>a</code><span>. If you roll 26 times in either direction, you should end up back where you started.</span></p><h3><span>Examples</span></h3><pre><code>rollingCipher(\"abcd\", 1) ➞ \"bcde\"\n\nrollingCipher(\"abcd\", -1) ➞ \"zabc\"\n\nrollingCipher(\"abcd\", 3) ➞ \"defg\"\n\nrollingCipher(\"abcd\", 26) ➞ \"abcd\"</code></pre><h3><span>Notes</span></h3><ul><li><span>All letters are lower cased.</span></li><li><span>No spacing.</span></li><li><span>Each character is rotated the same number of times.</span></li></ul>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"cryptography"
+		],
+		"tests": [
+			"Test.assertEquals(rollingCipher('abcd', 1), 'bcde')",
+			"Test.assertEquals(rollingCipher('abcd', -1), 'zabc')",
+			"Test.assertEquals(rollingCipher('abcd', 3), 'defg')",
+			"Test.assertEquals(rollingCipher('abcd', 25), 'zabc')",
+			"Test.assertEquals(rollingCipher('abcd', 26), 'abcd')",
+			"Test.assertEquals(rollingCipher('abcd', 27), 'bcde')",
+			"Test.assertEquals(rollingCipher('abcd', 0), 'abcd')"
+		],
+		"url": "https://edabit.com/challenge/38kbFLBZdtCWSKHDZ"
+	},
+	{
+		"title": "Fibonacci String",
+		"description": "<p><span>A Fibonacci string is a precedence of the Fibonacci series. It works with any two characters of the English alphabet (as opposed to the numbers </span><code>0</code><span> and </span><code>1</code><span> in the Fibonacci series) as the initial items and concatenates them together as it progresses similarly to the Fibonacci series.</span></p><h3><span>Examples</span></h3><pre><code>fibStr(3, [\"j\", \"h\"]) ➞ \"j, h, hj\"\n\nfibStr(5, [\"e\", \"a\"]) ➞ \"e, a, ae, aea, aeaae\"\n\nfibStr(6, [\"n\", \"k\"]) ➞ \"n, k, kn, knk, knkkn, knkknknk\"</code></pre><h3><span>Notes</span></h3><ul><li><span>All values for </span><code>n</code><span> will be at least 2.</span></li><li><span>A recursive version of this challenge can be found </span><a target=\"_blank\" href=\"https://edabit.com/challenge/aEWotdg3r6eB2QLWK\"><span>here</span></a><span>.</span></li></ul>",
+		"publishedBy": "Deep Xavier",
+		"publishedByUrl": "https://edabit.com/user/a777e8chPvJkY3tKa",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(fibStr(3, [\"j\", \"h\"]), \"j, h, hj\")",
+			"Test.assertEquals(fibStr(5, [\"e\", \"a\"]), \"e, a, ae, aea, aeaae\")",
+			"Test.assertEquals(fibStr(6, [\"n\", \"k\"]), \"n, k, kn, knk, knkkn, knkknknk\")",
+			"Test.assertEquals(fibStr(7, [\"f\", \"c\"]), \"f, c, cf, cfc, cfccf, cfccfcfc, cfccfcfccfccf\")",
+			"Test.assertEquals(fibStr(9, [\"b\", \"a\"]), \"b, a, ab, aba, abaab, abaababa, abaababaabaab, abaababaabaababaababa, abaababaabaababaababaabaababaabaab\")",
+			"Test.assertEquals(fibStr(11, [\"z\", \"x\"]), \"z, x, xz, xzx, xzxxz, xzxxzxzx, xzxxzxzxxzxxz, xzxxzxzxxzxxzxzxxzxzx, xzxxzxzxxzxxzxzxxzxzxxzxxzxzxxzxxz, xzxxzxzxxzxxzxzxxzxzxxzxxzxzxxzxxzxzxxzxzxxzxxzxzxxzxzx, xzxxzxzxxzxxzxzxxzxzxxzxxzxzxxzxxzxzxxzxzxxzxxzxzxxzxzxxzxxzxzxxzxxzxzxxzxzxxzxxzxzxxzxxz\")"
+		],
+		"url": "https://edabit.com/challenge/dZcAcu86rBtXLvXWD"
+	},
+	{
+		"title": "Concert Seats",
+		"description": "<p><span>Create a function that determines whether each seat can \"see\" the front-stage. A number can \"see\" the front-stage if it is </span><strong><span>strictly greater</span></strong><span> than the number before it.</span></p><p><span>Everyone can see the front-stage in the example below:</span></p><pre><code>// FRONT STAGE\n[[1, 2, 3, 2, 1, 1],\n[2, 4, 4, 3, 2, 2],\n[5, 5, 5, 5, 4, 4],\n[6, 6, 7, 6, 5, 5]]\n\n// Starting from the left, the 6 &gt; 5 &gt; 2 &gt; 1, so all numbers can see.\n// 6 &gt; 5 &gt; 4 &gt; 2 - so all numbers can see, etc.</code></pre><p><span>Not everyone can see the front-stage in the example below:</span></p><pre><code>// FRONT STAGE\n[[1, 2, 3, 2, 1, 1], \n[2, 4, 4, 3, 2, 2], \n[5, 5, 5, 10, 4, 4], \n[6, 6, 7, 6, 5, 5]]\n\n// The 10 is directly in front of the 6 and blocking its view.</code></pre><p><span>The function should return </span><code>true</code><span> if </span><strong><span>every number</span></strong><span> can see the front-stage, and </span><code>false</code><span> if even a single number cannot.</span></p><h3><span>Examples</span></h3><pre><code>canSeeStage([\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n]) ➞ true\n\ncanSeeStage([\n  [0, 0, 0],\n  [1, 1, 1],\n  [2, 2, 2]\n]) ➞ true\n\ncanSeeStage([\n  [2, 0, 0], \n  [1, 1, 1], \n  [2, 2, 2]\n]) ➞ false\n\ncanSeeStage([\n  [1, 0, 0],\n  [1, 1, 1],\n  [2, 2, 2]\n]) ➞ false\n\n// Number must be strictly smaller than \n// the number directly behind it.</code></pre><h3><span>Notes</span></h3><p><span>Numbers must be </span><strong><span>strictly greater</span></strong><span> than the number in front of it.</span></p>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"loops",
+			"validation"
+		],
+		"tests": [
+			"Test.assertEquals(canSeeStage(",
+			"[[1, 2, 3], ",
+			"[4, 5, 6], ",
+			"[7, 8, 9]]), true)",
+			"​",
+			"Test.assertEquals(canSeeStage(",
+			"[[1, 2, 2], ",
+			"[1, 2, 3], ",
+			"[4, 4, 4]]), false)",
+			"​",
+			"Test.assertEquals(canSeeStage(",
+			"[[1, 1, 2], ",
+			"[5, 2, 3], ",
+			"[4, 4, 4]]), false)",
+			"​",
+			"Test.assertEquals(canSeeStage(",
+			"[[1, 1, 2], ",
+			"[5, 2, 3], ",
+			"[6, 4, 4]]), true)",
+			"​",
+			"Test.assertEquals(canSeeStage(",
+			"[[0, 0, 0], ",
+			"[1, 1, 1], ",
+			"[2, 2, 2]]), true)",
+			"​",
+			"Test.assertEquals(canSeeStage("
+		],
+		"url": "https://edabit.com/challenge/Qkdyd5CLHizJqmNdx"
+	},
+	{
+		"title": "Expensive Words",
+		"description": "<p><span>Each letter in a sentence is worth its </span><em><span>position in the alphabet</span></em><span> (i.e. </span><strong><span>a = 1, b = 2, c = 3, etc...</span></strong><span>). However, if a word is all in </span><strong><span>UPPERCASE</span></strong><span>, the value of that word is </span><strong><span>doubled</span></strong><span>.</span></p><p><span>Create a function which returns the </span><em><span>value</span></em><span> of a sentence.</span></p><pre><code>getSentenceValue(\"abc ABC Abc\") ➞ 24\n// a = 1, b = 2, c = 3\n\n// abc = 1 + 2 + 3 = 6\n// ABC = (1+2+3) * 2 = 12 (ALL letters are in uppercase)\n// Abc = 1 + 2 + 3 = 6 (NOT ALL letters are in uppercase)\n\n// 6 + 12 + 6 = 24</code></pre><h3><span>Examples</span></h3><pre><code>getSentenceValue(\"HELLO world\") ➞ 176\n\ngetSentenceValue(\"Edabit is LEGENDARY\") ➞ 251\n\ngetSentenceValue(\"Her seaside sea-shelling business is really booming!\") ➞ 488</code></pre><h3><span>Notes</span></h3><ul><li><span>Ignore spaces and punctuation.</span></li><li><span>Remember that the value of a </span><em><span>word</span></em><span> isn't doubled unless </span><em><span>all</span></em><span> the letters in it are </span><em><span>uppercase</span></em><span>.</span></li></ul>",
+		"publishedBy": "er0s",
+		"publishedByUrl": "https://edabit.com/user/5Zq3aGdvh4LHBvnJL",
+		"language": "JavaScript",
+		"tags": [
+			"algorithms",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(getSentenceValue('abc ABC Abc'), 24)",
+			"Test.assertEquals(getSentenceValue('HELLO world'), 176)",
+			"Test.assertEquals(getSentenceValue('Edabit is Legendary'), 160)",
+			"Test.assertEquals(getSentenceValue('Her seaside sea-shelling business is really booming!'), 488)",
+			"Test.assertEquals(getSentenceValue('edabit Edabit EDABIT'), 164)",
+			"Test.assertEquals(getSentenceValue('expensive words'), 198)",
+			"Test.assertEquals(getSentenceValue('FISH AND CHIPS'), 232)",
+			"Test.assertEquals(getSentenceValue('this sentence is like a piece of hay in a needle stack'), 423)",
+			"Test.assertEquals(getSentenceValue(\"CAN YOU STOP SHOUTING?! I CAN'T HEAR MYSELF THINK!!!\"), 966)",
+			"Test.assertEquals(getSentenceValue('a whisper in the wind...'), 205)",
+			"Test.assertEquals(getSentenceValue(',.;[,.;][,.;[,.][,.;,.]['), 0)",
+			"Test.assertEquals(getSentenceValue(\"Isn't it funny how the word BIG is physically smaller than the word small?\"), 777)",
+			"Test.assertEquals(getSentenceValue('this is a really pricey sentence: ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ'), 2503)",
+			"Test.assertEquals(getSentenceValue('                    '), 0)",
+			"Test.assertEquals(getSentenceValue(''), 0)",
+			"Test.assertEquals(getSentenceValue('Oranges and APPLES'), 236)",
+			"Test.assertEquals(getSentenceValue('Edabit is LEGENDARY'), 251)",
+			"​",
+			"// made by @Joshua Señoron"
+		],
+		"url": "https://edabit.com/challenge/KKFx2xWbvR4NhyqwM"
+	},
+	{
+		"title": "Not Quite Perfect",
+		"description": "<p><span>A </span><strong><span>perfect</span></strong><span> number is a number that is equal to the sum of all its proper (non-self) divisors. Take 6 for example:</span></p><pre><code>6 = 1 + 2 + 3</code></pre><p><span>A number that is equal to the sum of all its proper divisors -- </span><em><span>provided that one of them is negative</span></em><span> -- is not quite perfect, but </span><strong><span>admirable</span></strong><span>.</span></p><p><span>To illustrate. The proper divisors of 12 are 1, 2, 3, 4, 6, totalling 16. However, if 2 is negative, the total would be 12, the number itself. 12 is therefore an admirable number.</span></p><pre><code>12 = 1 - 2 + 3 + 4 + 6</code></pre><p><span>Create a function that takes a number </span><code>n</code><span> as input.</span></p><ol><li><span>If </span><code>n</code><span> is perfect, return </span><code>\"Perfect\"</code><span>.</span></li><li><span>If </span><code>n</code><span> is admirable, return the proper divisor that must be rendered negative to make the sum of the proper divisors equal to </span><code>n</code><span>.</span></li><li><span>If </span><code>n</code><span> is neither perfect nor admirable, return </span><code>\"Neither\"</code><span>.</span></li></ol><h3><span>Examples</span></h3><pre><code>admirable(6) ➞ \"Perfect\"\n\nadmirable(12) ➞ 2\n\nadmirable(18) ➞ \"Neither\"</code></pre><h3><span>Notes</span></h3><p><span>N/A</span></p>",
+		"publishedBy": "Matt",
+		"publishedByUrl": "https://edabit.com/user/BkPgkDQGHm66X4Qai",
+		"language": "JavaScript",
+		"tags": [
+			"math",
+			"numbers",
+			"validation"
+		],
+		"tests": [
+			"Test.assertEquals(admirable(6), 'Perfect')",
+			"Test.assertEquals(admirable(12), 2)",
+			"Test.assertEquals(admirable(18), 'Neither')",
+			"Test.assertEquals(admirable(496), 'Perfect')",
+			"Test.assertEquals(admirable(138), 6)",
+			"Test.assertEquals(admirable(612), 'Neither')",
+			"Test.assertEquals(admirable(1876), 28)",
+			"Test.assertEquals(admirable(5456), 496)"
+		],
+		"url": "https://edabit.com/challenge/WEhe9MCnyZG8WhN9Z"
+	},
+	{
+		"title": "Group in Order",
+		"description": "<p><span>Create a function that groups an array of numbers based on a </span><strong><span>size</span></strong><span> parameter. The </span><strong><span>size</span></strong><span> represents the maximum length of each sub-array.</span></p><pre><code>[1, 2, 3, 4, 5, 6], 3\n[[1, 3, 5], [2, 4, 6]]\n// Divide array into groups of size 3.\n\n[1, 2, 3, 4, 5, 6], 2\n[[1, 4], [2, 5], [3, 6]]\n// Divide array into groups of size 2.\n\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 4\n[[1, 4, 7, 10], [2, 5, 8, 11], [3, 6, 9]]\n// \"Leftover\" arrays are okay.</code></pre><h3><span>Examples</span></h3><pre><code>group([1, 2, 3, 4], 2) ➞ [[1, 3], [2, 4]]\n\ngroup([1, 2, 3, 4, 5, 6, 7], 4) ➞ [[1, 3, 5, 7], [2, 4, 6]]\n\ngroup([1, 2, 3, 4, 5], 1) ➞ [[1], [2], [3], [4], [5]]\n\ngroup([1, 2, 3, 4, 5, 6], 4) ➞ [[1, 3, 5], [2, 4, 6]]</code></pre><h3><span>Notes</span></h3><ul><li><span>The </span><strong><span>size</span></strong><span> parameter represents the maximum size for each sub-array (see ex.4). You should try to fill each sub-array evenly. In other words, ex.4 should be </span><code>[[1, 3, 5], [2, 4, 6]]</code><span>, not </span><code>[[1, 3, 5, 6], [2, 4]]</code><span>.</span></li><li><span>Keep the relative order of the numbers in each sub-array the same as the order in the original array.</span></li></ul>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"arrays",
+			"closures",
+			"scope"
+		],
+		"tests": [
+			"Test.assertSimilar(group([1, 2, 3, 4], 2), [[1, 3], [2, 4]])",
+			"Test.assertSimilar(group([1, 2, 3, 4, 5, 6, 7], 4), [[1, 3, 5, 7], [2, 4, 6]])",
+			"Test.assertSimilar(group([1, 2, 3, 4, 5], 1), [[1], [2], [3], [4], [5]])",
+			"Test.assertSimilar(group([1, 2, 3, 4, 5, 6], 4), [[1, 3, 5], [2, 4, 6]])",
+			"Test.assertSimilar(group([1, 2, 3, 4, 5, 6], 3), [[1, 3, 5], [2, 4, 6]])",
+			"Test.assertSimilar(group([1, 2, 3, 4, 5, 6], 2), [[1, 4], [2, 5], [3, 6]])",
+			"Test.assertSimilar(group([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 4), [[1, 4, 7, 10], [2, 5, 8, 11], [3, 6, 9]])",
+			"Test.assertSimilar(group([1, 2, 3, 4, 5, 6, 7, 8], 2), [[1, 5], [2, 6], [3, 7], [4, 8]])"
+		],
+		"url": "https://edabit.com/challenge/w5LTwJwDLK4uQ3Dmv"
+	},
+	{
+		"title": "Molar Mass of Chemical Compound",
+		"description": "<p><span>Create a function that takes a name of a chemical compound as a string and returns the molar mass of the compound. For this challenge only, required data is included below.</span></p><h3><span>Data</span></h3><pre><code>H -&gt; 1\nB -&gt; 10\nO -&gt; 16\nS -&gt; 32\nN -&gt; 14\nCl -&gt; 35\n\nWater = \"H2 O\"\nBoricAcid = \"H3 B O3\"\nSulfuricAcid = \"H2 S O4\"\nNitricAcid = \"H N O3\"\nHydroChloricAcid = \"H Cl\"</code></pre><h3><span>Examples</span></h3><pre><code>molarMass(\"SulfuricAcid\") -&gt; \"H2 S O4\"\n#H * 2 + S * 1 +  O * 4 -----&gt; 1 * 2 + 32 * 1 + 16 * 4 = 98\n\nmolarMass(\"Water\") -&gt; \"H2 O\"\n#H * 2 +  O * 1 -----&gt; 1 * 2 + 16 * 1 = 18</code></pre><h3><span>Notes</span></h3><ul><li><span>Input is a string and return value is number.</span></li><li><span>In the data, </span><strong><span>\"O\"</span></strong><span> is an English letter, not </span><strong><span>zero</span></strong><span>.</span></li><li><span>Check out the </span><strong><span>Resources</span></strong><span> tab.</span></li></ul>",
+		"publishedBy": "BijogFc24",
+		"publishedByUrl": "https://edabit.com/user/Nb6LYPoQP6KJZt8mz",
+		"language": "JavaScript",
+		"tags": [
+			"language_fundamentals",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(molarMass(\"SulfuricAcid\"), 98)",
+			"Test.assertEquals(molarMass(\"Water\"), 18)",
+			"Test.assertEquals(molarMass(\"BoricAcid\"), 61)",
+			"Test.assertEquals(molarMass(\"NitricAcid\"), 63)",
+			"Test.assertEquals(molarMass(\"HydroChloricAcid\"), 36)"
+		],
+		"url": "https://edabit.com/challenge/BZjEvK7rMNZ3uvokm"
+	},
+	{
+		"title": "Text Twist!",
+		"description": "<p><span>In </span><strong><span>Text Twist</span></strong><span>, players try to score points by forming words using the letters from a 6-letter scrambled word. They win the round if they can successfully unscramble the 6-letter word.</span></p><p><span>Create a function that takes in an array of </span><strong><span>already-guessed words</span></strong><span>, the </span><strong><span>unscrambled 6-letter word</span></strong><span> and returns the total number of points the player scored in a particular round using the following rubric:</span></p><ol><li><strong><span>3-letter</span></strong><span> words are </span><strong><span>1 pt</span></strong></li><li><strong><span>4-letter</span></strong><span> words are </span><strong><span>2 pts</span></strong></li><li><strong><span>5-letter</span></strong><span> words are </span><strong><span>3 pts</span></strong></li><li><strong><span>6-letter</span></strong><span> words are </span><strong><span>4 pts</span></strong><span> + </span><strong><span>50 pt bonus</span></strong><span> (for unscrambling the word) </span></li></ol><p><span>Remember that </span><strong><span>invalid words</span></strong><span> (words that cannot be formed from the 6-letter unscrambled words) count as </span><strong><span>0 pts</span></strong><span>.</span></p><h3><span>Examples</span></h3><pre><code>totalPoints([\"cat\", \"create\", \"sat\"], \"caster\") ➞ 2\n// Since \"create\" is an invalid word.\n\ntotalPoints([\"trance\", \"recant\"], \"recant\") ➞ 108\n// Since \"trance\" and \"recant\" score 54 pts each.\n\ntotalPoints([\"dote\", \"dotes\", \"toes\", \"set\", \"dot\", \"dots\", \"sted\"], \"tossed\") ➞ 13\n// Since 2 + 3 + 2 + 1 + 1 + 2 + 2 = 13</code></pre><h3><span>Notes</span></h3><ul><li><span>If a 6-letter word has multiple anagrams, </span><strong><span>count each 6-letter unscramble as an additional 54 pts</span></strong><span>. For example, if the word is </span><strong><span>arches</span></strong><span>, and the player guessed </span><strong><span>arches</span></strong><span> and </span><strong><span>chaser</span></strong><span>, add </span><strong><span>108 pts</span></strong><span> for both words.</span></li><li><span>You can play Text Twist here: </span><a target=\"_blank\" href=\"http://text-twist2.com\"><span>http://text-twist2.com</span></a></li></ul>",
+		"publishedBy": "Helen Yu",
+		"publishedByUrl": "https://edabit.com/user/mNMQvcxKSSvqqMYCH",
+		"language": "JavaScript",
+		"tags": [
+			"games",
+			"higher_order_functions",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(totalPoints([\"dote\", \"dotes\", \"toes\", \"set\", ",
+			"                               \"dot\", \"dots\", \"sted\"], \"tossed\"), 13)",
+			"Test.assertEquals(totalPoints([\"dial\", \"tail\", \"lid\", \"tide\", ",
+			"                               \"date\", \"late\", \"tad\"], \"detail\"), 12)",
+			"​",
+			"// It should work with 6-letter words ",
+			"Test.assertEquals(totalPoints([\"trance\", \"recant\"], \"recant\"), 108)",
+			"Test.assertEquals(totalPoints([\"bluest\", \"sublet\", \"let\", ",
+			"                               \"set\", \"belt\", \"belts\", \"bet\", ",
+			"                              \"bets\", \"sted\", \"but\", \"tule\"], \"subtle\"), 121)",
+			"​",
+			"// It should work with incorrect words too ",
+			"Test.assertEquals(totalPoints([\"cat\", \"create\", \"sat\"], \"caster\"), 2)",
+			"Test.assertEquals(totalPoints([\"emote\", \"tome\", \"root\"], \"meteor\"), 5)"
+		],
+		"url": "https://edabit.com/challenge/Ht7CqJtytgzfezwXA"
+	},
+	{
+		"title": "Highlight Formula like Excel",
+		"description": "<p><span>You need to highlight a typed excel formula for your website, to do this u need to create a function named \"hightlightFormula\".</span></p><h3><span>Explanations :</span></h3><ul><li><span>hightlightFormula have only one string as parameter with simple text inside.</span></li><li><span>hightlightFormula return a html string created from first parameter string.</span></li><li><span>A formula should begin with \"=\" or there is no colors.</span></li><li><span>Excel add colors on each cell names and same colors to same ranged</span></li><li><span>An excel cell name can look like this : A1, $A1,$A$1,A$1</span></li><li><span>An excel cell name can be ranged with this : A1:A1 or A1:A3</span></li><li><span>An excel cell row syntax is : $1:$ or 1:3</span></li><li><span>An excel cell col syntax is: $A:$B or A:B</span></li><li><span>As exemple : </span></li></ul><pre><code>\"=A1;A1:$A$1\" &lt;= A1 and A1:$A$1 should have same color.</code></pre><ul><li><span>A cell name can have one or multiple signs (+ and -) without syntax error. Exemple : </span></li></ul><pre><code>''+++---A1\" or \"-A1\" or \"+A1\" </code></pre><ul><li><span>Each new detected cells should have a new color (colors are on notes), when all color was used, we start again from first color.</span></li><li><span>Cell name separator is \";\" .</span></li><li><span>To Avoid syntax error about number, they should have only a sign with a cellname and not a separator (execpt if number is first argument of formula or if number is in a function). Exemple :</span></li></ul><pre><code>=A1+12+A12\n=12;A1+A12+1+B12\n=SUM(A1;2)+A2</code></pre><ul><li><span>Formula function syntax is \"MYFUNCTION(param1;param2)\" and should count as syntax error without parameters</span></li><li><span>Formula string syntax is \"exemple\" (quotes included), to avoid syntax error a string can placed only in function as parameter. Exemple : </span></li></ul><pre><code>SUM(1;\"5\")</code></pre><ul><li><span>If formula's cell name, sign, separator or function syntax fucked up, last cells from error keep colors but nexts don't get any color, exemple :</span></li></ul><pre><code>\"=A1;$B$;A2\" &lt;= '=&lt;span style=\"color:#326ac7\"&gt;A1&lt;/span&gt;;$B$;A2'\n\"=A1;BBBBB;A2\" &lt;= '=&lt;span style=\"color:#326ac7\"&gt;A1&lt;/span&gt;;BBBBB;A2'\n\"=A1+/B1;A2\" &lt;= '=&lt;span style=\"color:#326ac7\"&gt;A1&lt;/span&gt;+/B1;A2'\n\"=A1;;B1;A2\" &lt;= '=&lt;span style=\"color:#326ac7\"&gt;A1&lt;/span&gt;;;B1;A2'\n\"=A1;SUM();A2\" &lt;= '=&lt;span style=\"color:#326ac7\"&gt;A1&lt;/span&gt;;SUM();A2'</code></pre><h3><span>Examples</span></h3><pre><code>highLightFormula(\"=A1+1,2+A2\") ➞ '=&lt;span style=\"color:#326ac7\"&gt;A1&lt;/span&gt;+1,2+&lt;span style=\"color:#c0353e\"&gt;A2&lt;/span&gt;'\n\nhighLightFormula(\"=$A1+($A$2+A3+A4)+IF(A5&gt;=A6;A7)+A8\") ➞ '=&lt;span style=\"color:#326ac7\"&gt;$A1&lt;/span&gt;+(&lt;span style=\"color:#c0353e\"&gt;$A$2&lt;/span&gt;+&lt;span style=\"color:#8157b7\"&gt;A3&lt;/span&gt;+&lt;span style=\"color:#007c20\"&gt;A4&lt;/span&gt;)+IF(&lt;span style=\"color:#b03e84\"&gt;A5&lt;/span&gt;&gt;=&lt;span style=\"color:#b64900\"&gt;A6&lt;/span&gt;;&lt;span style=\"color:#267392\"&gt;A7&lt;/span&gt;)+&lt;span style=\"color:#326ac7\"&gt;A8&lt;/span&gt;'\n\nhighLightFormula(\"=$A1+A1+$A$1+/A2\") ➞ '=&lt;span style=\"color:#326ac7\"&gt;$A1&lt;/span&gt;+&lt;span style=\"color:#326ac7\"&gt;A1&lt;/span&gt;+&lt;span style=\"color:#326ac7\"&gt;$A$1&lt;/span&gt;+/A2'</code></pre><h3><span>Notes</span></h3><ul><li><span>The only allowed signs syntax is : \"+\" ; \"-\" ; \"+-\" ; \"-+\" ; \"/\" ; \"/+\" ; \"/-\" ; \"</span><em><span>+\" ; \"</span></em><span>-\" ; \"&lt;\" ; \"&gt;\" ; \"&lt;=\" ; \"&gt;=\" ; \"&lt;&gt;\"</span></li><li><span>Other allowed symbols are : \";\" ; \"(\" ; \")\" ; \":\" ; \"=\" (All others are syntax error)</span></li><li><span>Sign &lt;&gt; don't do syntax error (it seems :  not equal)</span></li><li><span>Cells colors are : '#326ac7', '#c0353e', '#8157b7', '#007c20', '#b03e84', '#b64900', '#267392' (in same order)</span></li><li><span>Colored html span should be like this: </span><code>&lt;span style=\"color:{rightColor}\"&gt;{rightCellName}&lt;/span&gt;</code></li><li><span>The final result (Error like #VALUE! etc..) of formula is not important only hightlighting is.</span></li><li><span>Parenthesis color will be ignored in this challenge.</span></li><li><span>Letters case isn't important.</span></li></ul>",
+		"publishedBy": "0osh4d0wo0",
+		"publishedByUrl": "https://edabit.com/user/XHngE5iScvztMpnR2",
+		"language": "JavaScript",
+		"tags": [
+			"conditions",
+			"formatting",
+			"loops",
+			"regex"
+		],
+		"tests": [
+			"var genRandomChar = function(){return String.fromCharCode(Math.floor(Math.random()*(126-32)+32))}",
+			"Test.assertEquals(highLightFormula(\"=A1+1,2+A2\"), '=<span style=\"color:#326ac7\">A1</span>+1,2+<span style=\"color:#c0353e\">A2</span>');",
+			"Test.assertEquals(highLightFormula(\"=$A1+($A$2+A3+A4)+IF(A5>=A6;A7)+A8\"), '=<span style=\"color:#326ac7\">$A1</span>+(<span style=\"color:#c0353e\">$A$2</span>+<span style=\"color:#8157b7\">A3</span>+<span style=\"color:#007c20\">A4</span>)+IF(<span style=\"color:#b03e84\">A5</span>>=<span style=\"color:#b64900\">A6</span>;<span style=\"color:#267392\">A7</span>)+<span style=\"color:#326ac7\">A8</span>');",
+			"Test.assertEquals(highLightFormula(\"=$A1+A1+$A$1+/A2\"), '=<span style=\"color:#326ac7\">$A1</span>+<span style=\"color:#326ac7\">A1</span>+<span style=\"color:#326ac7\">$A$1</span>+/A2');",
+			"Test.assertEquals(highLightFormula(\"=B1+B2*1/A1-C6\"), '=<span style=\"color:#326ac7\">B1</span>+<span style=\"color:#c0353e\">B2</span>*1/<span style=\"color:#8157b7\">A1</span>-<span style=\"color:#007c20\">C6</span>');",
+			"Test.assertEquals(highLightFormula(\"=B1*-B1\"), '=<span style=\"color:#326ac7\">B1</span>*-<span style=\"color:#326ac7\">B1</span>');",
+			"Test.assertEquals(highLightFormula(\"=B1/-B1\"), '=<span style=\"color:#326ac7\">B1</span>/-<span style=\"color:#326ac7\">B1</span>');",
+			"Test.assertEquals(highLightFormula(\"=B1++++-----B1\"), '=<span style=\"color:#326ac7\">B1</span>++++-----<span style=\"color:#326ac7\">B1</span>');",
+			"Test.assertEquals(highLightFormula(\"=B1----+++++B1\"), '=<span style=\"color:#326ac7\">B1</span>----+++++<span style=\"color:#326ac7\">B1</span>');",
+			"Test.assertEquals(highLightFormula(\"=A1;A2+1-A3;5;6;AMB521\"), '=<span style=\"color:#326ac7\">A1</span>;<span style=\"color:#c0353e\">A2</span>+1-<span style=\"color:#8157b7\">A3</span>;5;6;AMB521');",
+			"Test.assertEquals(highLightFormula(\"=A1;A2+1-A3+5;6;AMB521\"), '=<span style=\"color:#326ac7\">A1</span>;<span style=\"color:#c0353e\">A2</span>+1-<span style=\"color:#8157b7\">A3</span>+5;6;AMB521');",
+			"Test.assertEquals(highLightFormula(\"=A1;A2+1-A3+5+6;AMB521\"), '=<span style=\"color:#326ac7\">A1</span>;<span style=\"color:#c0353e\">A2</span>+1-<span style=\"color:#8157b7\">A3</span>+5+6;<span style=\"color:#007c20\">AMB521</span>');",
+			"Test.assertEquals(highLightFormula(\"=IF(A1>=B2;A7)++++++++SUM(A1;2)+A1*C2\"), '=IF(<span style=\"color:#326ac7\">A1</span>>=<span style=\"color:#c0353e\">B2</span>;<span style=\"color:#8157b7\">A7</span>)++++++++SUM(<span style=\"color:#326ac7\">A1</span>;2)+<span style=\"color:#326ac7\">A1</span>*<span style=\"color:#007c20\">C2</span>');",
+			"Test.assertEquals(highLightFormula(\"A1+A2+B3+A1\"), \"A1+A2+B3+A1\");",
+			"Test.assertEquals(highLightFormula(\"=SUM(--(FREQUENCY(B3:B12,B3:B12)>0))+A2\"), '=SUM(--(FREQUENCY(<span style=\"color:#326ac7\">B3:B12</span>,B3:B12)>0))+A2');",
+			"Test.assertEquals(highLightFormula(\"=SUM(--(FREQUENCY(B3:B12;B3:B12)>0))+A2\"), '=SUM(--(FREQUENCY(<span style=\"color:#326ac7\">B3:B12</span>;<span style=\"color:#326ac7\">B3:B12</span>)>0))+<span style=\"color:#c0353e\">A2</span>');",
+			"Test.assertEquals(highLightFormula('=MATCH(2,1/(B4:B10<>\"\")+A2'), '=MATCH(2,1/(<span style=\"color:#326ac7\">B4:B10</span><>\"\")+<span style=\"color:#c0353e\">A2</span>');",
+			"Test.assertEquals(highLightFormula(\"=$1:$3;A1;$b:$A;A3\"), '=<span style=\"color:#326ac7\">$1:$3</span>;<span style=\"color:#c0353e\">A1</span>;<span style=\"color:#8157b7\">$b:$A</span>;<span style=\"color:#007c20\">A3</span>');",
+			"Test.assertEquals(highLightFormula(\"=MAX(IF(MOD(COLUMN(B5:K5)-COLUMN(B5)+1;L5)=0;B5:K5))\"), '=MAX(IF(MOD(COLUMN(<span style=\"color:#326ac7\">B5:K5</span>)-COLUMN(<span style=\"color:#c0353e\">B5</span>)+1;<span style=\"color:#8157b7\">L5</span>)=0;<span style=\"color:#326ac7\">B5:K5</span>))');",
+			"Test.assertEquals(highLightFormula(\"=A1(B2)+B3;;B4-B8\"), '=<span style=\"color:#326ac7\">A1</span>(<span style=\"color:#c0353e\">B2</span>)+<span style=\"color:#8157b7\">B3</span>;;B4-B8');",
+			"Test.assertEquals(highLightFormula(\"=A1(B2)+B3=>B1\"), '=<span style=\"color:#326ac7\">A1</span>(<span style=\"color:#c0353e\">B2</span>)+<span style=\"color:#8157b7\">B3</span>=>B1');",
+			"Test.assertEquals(highLightFormula(\"=A1(B2)+B3>=B1\"), '=<span style=\"color:#326ac7\">A1</span>(<span style=\"color:#c0353e\">B2</span>)+<span style=\"color:#8157b7\">B3</span>>=<span style=\"color:#007c20\">B1</span>');",
+			"Test.assertEquals(highLightFormula(\"=1:3;A1;b:a;aa;A3\"), '=<span style=\"color:#326ac7\">1:3</span>;<span style=\"color:#c0353e\">A1</span>;<span style=\"color:#8157b7\">b:a</span>;aa;A3')",
+			"Test.assertEquals(highLightFormula(\"=1:3;A1;b:a+12;A3\"), '=<span style=\"color:#326ac7\">1:3</span>;<span style=\"color:#c0353e\">A1</span>;<span style=\"color:#8157b7\">b:a</span>+12;<span style=\"color:#007c20\">A3</span>')",
+			"Test.assertEquals(highLightFormula(\"=1:3;A1;b:a;12;A3\"), '=<span style=\"color:#326ac7\">1:3</span>;<span style=\"color:#c0353e\">A1</span>;<span style=\"color:#8157b7\">b:a</span>;12;A3')",
+			"Test.assertEquals(highLightFormula(\"=$1:$3;A1;b:a;12;A3\"), '=<span style=\"color:#326ac7\">$1:$3</span>;<span style=\"color:#c0353e\">A1</span>;<span style=\"color:#8157b7\">b:a</span>;12;A3')"
+		],
+		"url": "https://edabit.com/challenge/bmrEKndGw8SiDqAvm"
+	},
+	{
+		"title": "MTG Mana Cost",
+		"description": "<p><span>In the trading card game </span><em><span>Magic: the Gathering</span></em><span>, players must use a resource called </span><strong><span>mana</span></strong><span> to cast spells. There are six types of mana in </span><em><span>Magic</span></em><span>: white (W), blue (U), black (B), red (R), green (G), and colorless (C). The </span><strong><span>mana cost</span></strong><span> of a spell indicates the amount and type(s) of mana that must be paid to cast the spell.</span></p><ul><li><span>If the mana cost contains a number (such as \"3\"), that number must be paid with that total amount of mana in </span><em><span>any combination</span></em><span> of types.</span></li><li><span>If the mana cost contains a mana type (\"W\", \"U\", \"B\", \"R\", \"G\", or \"C\"), that symbol must be paid with one mana of the corresponding type.</span></li></ul><p><span>Each individual mana in the player's mana pool can only pay one part of the cost. For example, the mana cost \"3WW\" requires two white (W) mana and 3 </span><em><span>additional</span></em><span> mana in any combination of types. The two white mana used to pay the \"WW\" do not also contribute to the \"3\".</span></p><p><span>In this challenge, the player's mana pool will be represented as a string, with each character (W, U, B, R, G, or C) representing a single mana. The mana cost to be paid will also be represented as a string, which may contain a single one or two digit number and/or any number of W, U, B, R, G, and C characters.</span></p><p><span>Write a function that takes in the two strings, the player's mana and a mana cost, and determines whether or not the player's mana can pay the cost.</span></p><h3><span>Examples</span></h3><pre><code>canPayCost(\"WWGGR\", \"2WWG\") ➞ True\n\ncanPayCost(\"WWGG\", \"2WWG\") ➞ False    // Not enough total mana\n\ncanPayCost(\"WGGGR\", \"2WWG\") ➞ False   // Not enough W mana\n\ncanPayCost(\"WUUUBC\", \"UUB\") ➞ True    // Having extra mana is okay</code></pre><h3><span>Notes</span></h3><ul><li><span>All letters will be uppercase.</span></li><li><span>If there is a number in the mana cost, it will always come at the beginning.</span></li><li><span>An empty mana pool will be represented by an empty string.</span></li><li><span>The function should correctly handle double-digit numbers in the mana cost, as well as a mana cost of \"0\".</span></li></ul>",
+		"publishedBy": "Deep Xavier",
+		"publishedByUrl": "https://edabit.com/user/a777e8chPvJkY3tKa",
+		"language": "JavaScript",
+		"tags": [
+			"games",
+			"strings"
+		],
+		"tests": [
+			"Test.assertEquals(canPayCost(\"BB\", \"1B\"), true)",
+			"Test.assertEquals(canPayCost(\"BR\", \"1B\"), true)",
+			"Test.assertEquals(canPayCost(\"UBC\", \"1B\"), true)",
+			"Test.assertEquals(canPayCost(\"UR\", \"1B\"), false)",
+			"Test.assertEquals(canPayCost(\"B\", \"1B\"), false)",
+			"Test.assertEquals(canPayCost(\"U\", \"U\"), true)",
+			"Test.assertEquals(canPayCost(\"WU\", \"U\"), true)",
+			"Test.assertEquals(canPayCost(\"C\", \"U\"), false)",
+			"Test.assertEquals(canPayCost(\"RGG\", \"RGG\"), true)",
+			"Test.assertEquals(canPayCost(\"URGG\", \"RGG\"), true)",
+			"Test.assertEquals(canPayCost(\"RRG\", \"RGG\"), false)",
+			"Test.assertEquals(canPayCost(\"WWGG\", \"RGG\"), false)",
+			"Test.assertEquals(canPayCost(\"WWRCC\", \"2WWC\"), true)",
+			"Test.assertEquals(canPayCost(\"WWURGC\", \"2WWC\"), true)",
+			"Test.assertEquals(canPayCost(\"WWCC\", \"2WWC\"), false)",
+			"Test.assertEquals(canPayCost(\"WRCCC\", \"2WWC\"), false)",
+			"Test.assertEquals(canPayCost(\"WWRRR\", \"2WWC\"), false)",
+			"Test.assertEquals(canPayCost(\"WUBRGC\", \"WUBRG\"), true)",
+			"Test.assertEquals(canPayCost(\"BBBB\", \"4\"), true)",
+			"Test.assertEquals(canPayCost(\"BBCC\", \"3\"), true)",
+			"Test.assertEquals(canPayCost(\"BBCC\", \"5\"), false)",
+			"Test.assertEquals(canPayCost(\"WWWWUUUUBBBBRR\", \"12RR\"), true)",
+			"Test.assertEquals(canPayCost(\"WWWWUUUUBBBBRR\", \"11RR\"), true)",
+			"Test.assertEquals(canPayCost(\"WWWWUUUUBBBBRR\", \"13RR\"), false)",
+			"Test.assertEquals(canPayCost(\"WWWWUUUUBBBBRGG\", \"13RR\"), false)",
+			"Test.assertEquals(canPayCost(\"WWWWUUUUBBBBRRRRGGGG\", \"15\"), true)"
+		],
+		"url": "https://edabit.com/challenge/iEapjskJ2jc75cazv"
+	},
+	{
+		"title": "Calculating Mathematical Expression",
+		"description": "<p><span>Create a function that takes a mathematical expression as a string, array of numbers on which the mathematical expression is to be calculated and return the result as an array of string.</span></p><h3><span>Explanation</span></h3><pre><code>mathematicalExp(\"f(x)=x+1\",[1,2]) ➞ [\"f(1)=2\",\"f(2)=3\"]\n\n// Math expression: \"f(x)=x+1\"\n// Numbers to calculate expression = [1,2]\n// f(1)=1+1=2\n// f(2)=2+1=2\n// Solution = [\"f(1)=2\",\"f(2)=3\"]</code></pre><h3><span>Examples</span></h3><pre><code>mathematicalExp(\"f(x)=x+1\",[1,2]) ➞ [\"f(1)=2\",\"f(2)=3\"]\n\nmathematicalExp(\"f(x)=x^2\",[1,2,3]) ➞ [\"f(1)=1\",\"f(2)=4\",\"f(3)=9\"]\n\nmathematicalExp(\"f(x)=x*3\",[1,2,3]) ➞ [\"f(1)=3\",\"f(2)=6\",\"f(3)=9\"]</code></pre><h3><span>Notes</span></h3><p><span>Array of numbers are positive integers.</span></p>",
+		"publishedBy": "BijogFc24",
+		"publishedByUrl": "https://edabit.com/user/Nb6LYPoQP6KJZt8mz",
+		"language": "JavaScript",
+		"tags": [
+			"language_fundamentals",
+			"math",
+			"strings"
+		],
+		"tests": [
+			"Test.assertSimilar(mathematicalExp(\"f(x)=x+1\", [1, 2]), [\"f(1)=2\", \"f(2)=3\"]);",
+			"Test.assertSimilar(mathematicalExp(\"f(x)=x^2\", [1, 2, 3]), [\"f(1)=1\",\"f(2)=4\",\"f(3)=9\"]);",
+			"Test.assertSimilar(mathematicalExp(\"f(x)=x*3\", [1, 2, 3]), [\"f(1)=3\",\"f(2)=6\",\"f(3)=9\"]);",
+			"Test.assertSimilar(mathematicalExp(\"f(x)=x-2\", [1, 2, 3]), [\"f(1)=-1\",\"f(2)=0\",\"f(3)=1\"]);",
+			"Test.assertSimilar(mathematicalExp(\"f(x)=x/3\", [3, 6, 9]), [\"f(3)=1\",\"f(6)=2\",\"f(9)=3\"]);"
+		],
+		"url": "https://edabit.com/challenge/9L9twcL5Fr7yTuQ2C"
+	}
+]

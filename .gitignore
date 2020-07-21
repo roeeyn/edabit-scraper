@@ -4,3 +4,7 @@ playground.js
 !ut_*.json
 !package.json
 !package-lock.json
+venv/
+.vscode/
+.ipynb_checkpoints/
+*.pyc

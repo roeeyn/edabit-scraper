@@ -1,6 +1,6 @@
 # Edabit Scraper
 
-## 1st Scrap
+## 1.st Scrap
 
 All needed to scrap can be found inside `./scraper`
 

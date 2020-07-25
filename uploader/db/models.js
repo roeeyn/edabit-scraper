@@ -30,6 +30,10 @@ const exerciseSchema = Schema({
     required: true,
     type: [String],
   },
+  starterFn: {
+    required: true,
+    type: [String],
+  },
   url: {
     type: String,
     required: true,

@@ -1,7 +1,10 @@
 const fsp = require("fs/promises");
-const exerciseList = require("./exercises_list.json");
 const { main } = require("./getCompleteExercise");
 const reduce = require("awaity/reduce");
+const isFix = process.env.FIX || false;
+const exerciseList = isFix
+  ? require("./scrap_errors.json")
+  : require("./exercises_list.json");
 const mainScript = async () => {
   const finalExercises = await reduce.default(
     exerciseList,
@@ -13,14 +16,20 @@ const mainScript = async () => {
       console.log(exerciseDetails);
       const newCarry = [...carry, exerciseDetails];
       const jsonifiedCarry = JSON.stringify(newCarry, null, "\t");
-      await fsp.writeFile("./complete_carry.json", jsonifiedCarry);
+      await fsp.writeFile(
+        isFix ? "./error_carry.json" : "./complete_carry.json",
+        jsonifiedCarry
+      );
       return newCarry;
     },
     []
   );
 
   const jsonifiedResult = JSON.stringify(finalExercises, null, "\t");
-  await fsp.writeFile("./complete_exercises.json", jsonifiedResult);
+  await fsp.writeFile(
+    isFix ? "./complete_error_fix.json" : "./complete_exercises.json",
+    jsonifiedResult
+  );
   console.log("ahuevo...?");
 };
 

@@ -1,5 +1,5 @@
-const completeExercises = require("./ut_complete_exercises.json");
-const exercisesList = require("./ut_exercises_list.json");
+const completeExercises = require("../ut_complete_exercises.json");
+const exercisesList = require("../ut_exercises_list.json");
 const fsp = require("fs/promises");
 
 const unmatchedElements = completeExercises.filter(
@@ -18,5 +18,5 @@ const mergedList = completeExercises.map((element, idx) => {
 });
 
 const jsonifiedMergeList = JSON.stringify(mergedList, null, "\t");
-fsp.writeFile("./ut_merged_list.json", jsonifiedMergeList);
+fsp.writeFile("../ut_merged_list.json", jsonifiedMergeList);
 console.log(`Written ${mergedList.length} challenges`);

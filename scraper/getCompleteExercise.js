@@ -1,6 +1,8 @@
 const puppeteer = require("puppeteer");
 
 const HEADLESS = true;
+const TEST_BTN_IDX = 5;
+const STARTER_CODE_BTN_IDX = 1;
 
 const getChallengeInfo = async page => {
   return await page.evaluate(() => {
@@ -29,11 +31,17 @@ const getChallengeInfo = async page => {
   });
 };
 
-const getTests = async page => {
-  await page.evaluate(() => {
-    const buttons = document.querySelectorAll(".rc-tabs-tab");
-    if (buttons && buttons.length === 7) buttons[5].click();
-  });
+const getTextInsideCode = async (page, btnIndex) => {
+  if (btnIndex === TEST_BTN_IDX)
+    await page.evaluate(() => {
+      const buttons = document.querySelectorAll(".rc-tabs-tab");
+      if (buttons && buttons.length === 7) buttons[5].click();
+    });
+  else
+    await page.evaluate(() => {
+      const buttons = document.querySelectorAll(".rc-tabs-tab");
+      if (buttons && buttons.length === 7) buttons[1].click();
+    });
   await page.waitFor(3000);
   return await page.evaluate(() => {
     return [
@@ -42,6 +50,10 @@ const getTests = async page => {
     ].map(el => el.innerText);
   });
 };
+const getTests = async page => await getTextInsideCode(page, TEST_BTN_IDX);
+
+const getStarterCode = async page =>
+  await getTextInsideCode(page, STARTER_CODE_BTN_IDX);
 
 const main = async exerciseUrl => {
   try {
@@ -53,7 +65,8 @@ const main = async exerciseUrl => {
     await page.waitFor(3000);
     const description = await getChallengeInfo(page);
     const tests = await getTests(page);
-    const result = { ...description, tests };
+    const starterFn = await getStarterCode(page);
+    const result = { ...description, tests, starterFn };
     await browser.close();
     return result;
   } catch (error) {

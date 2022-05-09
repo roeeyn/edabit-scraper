@@ -2,4 +2,5 @@
 
 ## 1. Get the challenges id
 
-[Steps](1_get_indexes/)
+[Step 1](1_get_indexes/)
+[Step 2](2_process_raw_results/)

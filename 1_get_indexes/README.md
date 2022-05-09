@@ -12,6 +12,10 @@ This worked well, which give me the entry point of how to get the challenges, bu
 
 I tried using burp to proxy the websocket, but it doesn't come with great support for this, so I changed to ZAP. This last tool gave me the ability to fuzzy messages into the proxied websocket, which gave me ability to fetch all the messages on demand, based on the payloads I was generating (see payload generator).
 
+```bash
+curl http://localhost:8080/JSON/websocket/view/message/?apikey=YOUR_API_KEY&channelId=2&messageId=30 > v2/1_get_indexes/raw_results/sample_indexes_payload_result.txt
+```
+
 ## 1.3 Result Notes:
 
 - JS 2430 exercises, approx. 1,416,604 bytes in last message

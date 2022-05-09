@@ -1,6 +1,14 @@
-# ProcessRawResult
+# 2. ProcessRawResult
 
-**TODO: Add description**
+```iex
+iex(1)> ProcessRawResult.raw_result_to_json "assets/java_860_exercises_indexes_payload_result.txt"
+:ok
+iex(2)> ProcessRawResult.raw_result_to_json "assets/js_2430_exercises_indexes_payload_result.txt" 
+:ok
+iex(3)> ProcessRawResult.raw_result_to_json "assets/python_2510_exercises_indexes_payload_result.txt"
+:ok
+iex(4)> 
+```
 
 ## Installation
 

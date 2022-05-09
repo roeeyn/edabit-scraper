@@ -24,3 +24,9 @@ process_raw_result-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+### PROJECT
+assets/java_860_exercises_indexes_payload_result.txt
+assets/js_2430_exercises_indexes_payload_result.txt
+assets/python_2510_exercises_indexes_payload_result.txt
+assets/sample_indexes_payload_result.txt

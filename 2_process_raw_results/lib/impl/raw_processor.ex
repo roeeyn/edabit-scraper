@@ -8,7 +8,7 @@ defmodule ProcessRawResult.Impl.RawProcessor do
          {:ok, result_list} <- Jason.decode(message) do
       {:ok, result_list["result"]}
     else
-      {:error, "Failed to parse raw websockets message result"}
+      _ -> {:error, "Failed to parse raw websockets message result"}
     end
   end
 end

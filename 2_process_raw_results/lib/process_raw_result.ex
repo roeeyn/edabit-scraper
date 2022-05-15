@@ -6,8 +6,8 @@ defmodule ProcessRawResult do
   """
   alias ProcessRawResult.Impl.RawProcessor
 
-  defdelegate get_payload_from_raw_result(result_file_path), to: RawProcessor
-  defdelegate get_payload_from_raw_result!(result_file_path), to: RawProcessor
+  defdelegate get_payload_from_raw_result(readed_file), to: RawProcessor
+  defdelegate get_payload_from_raw_result!(readed_file), to: RawProcessor
   defdelegate write_payload_to_json_file(processed_payload), to: RawProcessor
   defdelegate write_payload_to_json_file(processed_payload, output_file), to: RawProcessor
 

@@ -18,7 +18,7 @@ To run the script, just execute:
 
 ```bash
 # Substitute the values with your own.
-python3 main.py --amount 10 --request-id 3 --payload-amount 20 --language javascript
+python3 main.py --ids-path challenge_ids/sample_indexes_payload_result.txt.json --request-id 10
 ```
 
 This will generate a file named `edabit_ws_payload.txt`. I kept the name static, so I can quickly regenerate the file after some tests and the path would remain the same in my disk.

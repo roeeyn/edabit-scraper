@@ -29,4 +29,6 @@ process_raw_challenge_data_response-*.tar
 /assets/javascript/*.txt
 /assets/javascript/*.json
 /assets/python/*.txt
+/assets/python/*.json
 /assets/java/*.txt
+/assets/java/*.json

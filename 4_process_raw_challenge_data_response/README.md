@@ -24,3 +24,12 @@ cat javascript_challenges_data_details.json | jq '.[0]' | jq '._id'
 cat javascript_challenges_data_details.json | jq '.[0] | keys'
 cat javascript_challenges_data_details.json | jq '. | length'
 ```
+
+## 4.3 Obtained results
+
+After getting the details of each one of the exercises, we obtained the following results:
+- **2424** JavaScript exercises (6 exercises discarded)
+- **2504** Python exercises (6 exercises discarded)
+- **848** Java exercises (12 exercises discarded)
+
+These results vary from the one planned in the first step, but in the first step there were some duplicated ids, and also some of the discarded exercises included errors. This means that we're keeping a good amount of exercises with good quality too.

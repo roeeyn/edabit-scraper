@@ -34,7 +34,7 @@ We're going to get all the messages from the channel selected, but as the payloa
 I created a script that get all the message ids from the responses, so we can then get all the complete details from those messages. For this:
 
 ```bash
-python3 parser.py parse-raw-preview-file --previews-path raw_results_previews/javascript_data_payload_result.txt
+python3 parser.py parse-raw-preview-file --previews-path raw_results_previews/javascript_data_payload_result_preview.txt
 ```
 
 To get message details from the generated `message_ids` execute:

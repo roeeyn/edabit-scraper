@@ -2,19 +2,16 @@
 
 ## 1.1 Verify websocket logic in webpage
 
-I saw that everything was fetched via websocket, so I tried to create a heap snapshot (Memory -> Heap snapshot), and then expose the socket as a global variable in the console.
+I saw that everything was fetched via websocket, so I tried to create a heap snapshot (Developer Tools -> Memory -> Heap snapshot), and then expose the socket as a global variable in the console.
 
-The main logic for not getting a "Bad framing error" was just to increment 10 by 10 the requested challenges, and increment by 1 the id of the request. e.g. 30, 1 -> 40, 2 -> 50, 3
+I tried to create a script to connect automatically to the websocket from my local environment but I kept getting the error "Bad framing error". The main logic for not getting a "Bad framing error" in the browser was just to increment 10 by 10 the requested challenges, and increment by 1 the id of the request. e.g. 30, 1 -> 40, 2 -> 50, 3
 
-This worked well, which give me the entry point of how to get the challenges, but wasn't able to automate it as the socket creation flow is behind some meteor auth process which I don't understand, and didn't want to go through that approach.
+This worked well, which give me the entry point of how to get the challenges, but wasn't able to automate it because the socket creation flow was behind some esoteric meteor auth process which I don't understand, and didn't want to go through that approach.
 
 ## 1.2 Proxy the websocket
 
-I tried using burp to proxy the websocket, but it doesn't come with great support for this, so I changed to ZAP. This last tool gave me the ability to fuzzy messages into the proxied websocket, which gave me ability to fetch all the messages on demand, based on the payloads I was generating (see payload generator).
+I tried using burp to proxy the websocket, but it doesn't come with great support for this, so I changed to ZAP. This last tool gave me the ability to fuzzy messages into the proxied websocket, which gave me ability to fetch all the messages on demand, based on the payloads I was generating (see [payload generator](./payload_generator)).
 
-```bash
-curl http://localhost:8080/JSON/websocket/view/message/?apikey=YOUR_API_KEY&channelId=2&messageId=30 > v2/1_get_indexes/raw_results/sample_indexes_payload_result.txt
-```
 
 ## 1.3 Result Notes:
 

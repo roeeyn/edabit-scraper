@@ -1,3 +1,7 @@
+#==============================================================================#
+#--------------     [DEPRECATED] This was my original script     --------------#
+#==============================================================================#
+
 import sys
 from string import Template
 
@@ -21,7 +25,9 @@ file = open("edabit_ws_payload.txt", "w")
 for i in range(payload_amount + 1):
     amount += 10
     request_id += 1
-    new_line = payload_template.substitute(language=language, amount=amount, request_id=request_id)
+    new_line = payload_template.substitute(
+        language=language, amount=amount, request_id=request_id
+    )
     file.write(new_line)
 
 file.close()

@@ -36,4 +36,7 @@ I created a script that get all the message ids from the responses, so we can th
 To get all this message details execute:
 
 ```bash
+python3 parser.py get-message-details --api-key YOUR_API_KEY --prefix sample --channel-id 2
 ```
+
+This will get us a list of raw result messages inside the `raw_results` folder, but with all the details we need.

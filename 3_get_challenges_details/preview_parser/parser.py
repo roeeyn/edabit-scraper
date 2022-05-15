@@ -44,6 +44,7 @@ def parse_file(file_path: Path) -> None:
 def get_message_details(
     api_key: str = typer.Option(..., help="The ZAP API key to use"),
     channel_id: int = typer.Option(..., help="Channel id of the websocket"),
+    prefix: str = typer.Option(..., help="The prefix of the message files"),
 ) -> None:
     """
     Parse message ids and get the details of the messages.
@@ -64,7 +65,7 @@ def get_message_details(
 
     for detail in detail_list:
         raw_payload = detail.get("payload", "")
-        raw_result_file: str = f'message_{detail.get("id", "")}.txt'
+        raw_result_file: str = f'response_for_{prefix}_message_{detail.get("id", "")}.txt'
         with open(f"../raw_results/{raw_result_file}", "w") as f:
             f.write(raw_payload)
 

@@ -1,4 +1,27 @@
-# 2. ProcessRawResult
+# 2. Process Result From Previous Step
+
+Once I got the results from the previous step from ZAP, I needed to parse it, so I can get a nice json for easier further processing. 
+For this I used Elixir (just because I think it's a great opportunity to practice).
+
+## 2.1 Preparation & Dependency Insatallation
+
+For executing this, you need elixir installed, after that, you can install the dependencies with:
+
+```bash
+mix deps.get
+```
+
+After this just copy your results in the `assets` folder.
+
+## 2.2 ProcessRawResult module
+
+Execute the module with
+
+```bash
+iex -S mix
+```
+
+And get your parsed jsons in the `assets` folder as well with:
 
 ```iex
 iex(1)> ProcessRawResult.raw_result_to_json "assets/java_860_exercises_indexes_payload_result.txt"
@@ -9,21 +32,3 @@ iex(3)> ProcessRawResult.raw_result_to_json "assets/python_2510_exercises_indexe
 :ok
 iex(4)> 
 ```
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `process_raw_result` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:process_raw_result, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/process_raw_result>.
-

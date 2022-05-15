@@ -21,13 +21,13 @@ defmodule ProcessRawChallengeDataResponse.Impl.RawProcessor do
 
   def write_payload_to_json_file(processed_payload) do
     {:ok, encoded_payload} = Jason.encode(processed_payload)
-    formatted_file = Jason.Formatter.pretty_print(encoded_payload)
-    File.write("processed_result.json", formatted_file, [:binary])
+    # We do not want to beautify it as it is too big
+    File.write("processed_result.json", encoded_payload, [:binary])
   end
 
   def write_payload_to_json_file(processed_payload, output_file) do
     {:ok, encoded_payload} = Jason.encode(processed_payload)
-    formatted_file = Jason.Formatter.pretty_print(encoded_payload)
-    File.write(output_file, formatted_file, [:binary])
+    # We do not want to beautify it as it is too big
+    File.write(output_file, encoded_payload, [:binary])
   end
 end

@@ -24,3 +24,9 @@ process_raw_challenge_data_response-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignoring previous steps payloads
+/assets/javascript/*.txt
+/assets/javascript/*.json
+/assets/python/*.txt
+/assets/java/*.txt

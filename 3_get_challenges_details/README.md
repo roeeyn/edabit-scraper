@@ -1,21 +1,21 @@
-# GetChallengesDetails
+# 3. Get Challenges Details
 
-**TODO: Add description**
+After getting all the challenges ids, we need to get the details from each challenge. For this we're going to get back to ZAP and leverage the `getChallengeDetails` websocket request the frontend is using.
 
-## Installation
+## 3.1 Preparation & Dependency Insatallation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `get_challenges_details` to your list of dependencies in `mix.exs`:
+For executing this, you need elixir installed, after that, you can install the dependencies with:
 
-```elixir
-def deps do
-  [
-    {:get_challenges_details, "~> 0.1.0"}
-  ]
-end
+```bash
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/get_challenges_details>.
+After this just copy your previous json results in the `assets` folder.
 
+## 3.2 GetChallengesDetails module
+
+Execute the module with
+
+```bash
+iex -S mix
+```

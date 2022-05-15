@@ -66,6 +66,11 @@ def create_payload(
 
     write_payload(ids_path, request_id)
 
+    success_message: str = typer.style(
+        "Payload created successfully", fg=typer.colors.GREEN, bold=True
+    )
+    typer.echo(success_message)
+
 
 if __name__ == "__main__":
     app()

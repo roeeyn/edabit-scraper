@@ -1,0 +1,1 @@
+pyenv activate edabit_scrapper

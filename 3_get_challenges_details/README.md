@@ -24,16 +24,20 @@ This will generate the messages, inside ZAP, and now we need to extract them fro
 
 ## 3.3 Get the messages from ZAP API
 
-If we try to get the messages with:
+Get the messages with:
 
 ```bash
 curl http://localhost:8080/JSON/websocket/view/messages/\?apikey\=YOUR_API_KEY\&channelId\=2 > preview_parser/raw_results_previews/sample_data_payload_result_preview.txt
 ```
 
 We're going to get all the messages from the channel selected, but as the payload is big, we're only going to get the previews. This is why we need to leverage one of the first endpoints from ZAP that we used that is `/message`.
-I created a script that get all the message ids from the responses, so we can then get all the complete details from those messages.
+I created a script that get all the message ids from the responses, so we can then get all the complete details from those messages. For this:
 
-To get all this message details execute:
+```bash
+python3 parser.py parse-raw-preview-file --previews-path raw_results_previews/javascript_data_payload_result.txt
+```
+
+To get message details from the generated `message_ids` execute:
 
 ```bash
 python3 parser.py get-message-details --api-key YOUR_API_KEY --prefix sample --channel-id 2

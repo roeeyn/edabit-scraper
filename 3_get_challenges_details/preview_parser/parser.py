@@ -65,9 +65,14 @@ def get_message_details(
 
     for detail in detail_list:
         raw_payload = detail.get("payload", "")
-        raw_result_file: str = f'response_for_{prefix}_message_{detail.get("id", "")}.txt'
+        raw_result_file: str = f'{prefix}/response_for_{prefix}_message_{detail.get("id", "")}.txt'
         with open(f"../raw_results/{raw_result_file}", "w") as f:
             f.write(raw_payload)
+
+    success_message: str = typer.style(
+        f"Messages for {prefix} created successfully", fg=typer.colors.GREEN, bold=True
+    )
+    typer.echo(success_message)
 
 
 @app.command()
@@ -93,7 +98,7 @@ def parse_raw_preview_file(
     parse_file(previews_path)
 
     success_message: str = typer.style(
-        "Payload created successfully", fg=typer.colors.GREEN, bold=True
+        "Message ids file created successfully", fg=typer.colors.GREEN, bold=True
     )
     typer.echo(success_message)
 

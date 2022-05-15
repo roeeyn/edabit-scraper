@@ -1,21 +1,26 @@
-# ProcessRawChallengeDataResponse
+# 4. Process Challenge Details
 
-**TODO: Add description**
+## 4.1 Get the Challenge Details
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `process_raw_challenge_data_response` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:process_raw_challenge_data_response, "~> 0.1.0"}
-  ]
-end
+Start the iex with the mix
+```bash
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/process_raw_challenge_data_response>.
+```iex
+iex(1)> ProcessRawChallengeDataResponse.raw_results_to_json "javascript"
+```
 
+## 4.2 Get the json output
+
+The previous script will create a json file in the `assets` folder too.
+
+> I had to compress the output as it exceeds the limit from GitHub.
+
+You can validate the output with `jq`, with something like this:
+
+```bash
+cat javascript_challenges_data_details.json | jq '.[0]' | jq '._id'
+cat javascript_challenges_data_details.json | jq '.[0] | keys'
+cat javascript_challenges_data_details.json | jq '. | length'
+```

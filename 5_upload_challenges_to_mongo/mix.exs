@@ -22,9 +22,7 @@ defmodule UploadChallengesToMongo.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ecto},
-      {:mongodb},
-      {:mongodb_ecto},
+      {:mongodb_ecto, "~> 0.2"},
     ]
   end
 end

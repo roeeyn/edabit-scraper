@@ -24,3 +24,9 @@ upload_challenges_to_mongo-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Assets
+/assets/java/*json
+/assets/javascript/*json
+/assets/python/*json
+/assets/sample/*json

@@ -8,6 +8,7 @@ config :mongo_challenges_uploader, MongoChallengesUploader.Repo,
   idle_interval: 10_000,
   queue_target: 5_000,
   pool_size: 3,
+  # This should be enabled only in a dev environment
   show_sensitive_data_on_connection_error: true,
   username: "root",
   password: "root",

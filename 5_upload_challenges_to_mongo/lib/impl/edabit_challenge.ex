@@ -35,7 +35,7 @@ defmodule MongoChallengesUploader.Impl.EdabitChallenge do
     %EdabitChallenge{
       _id: decoded_map["_id"],
       author: decoded_map["author"],
-      author_id: decoded_map["author_id"],
+      author_id: decoded_map["authorId"],
       code: decoded_map["code"],
       difficulty: decoded_map["difficulty"],
       instructions: decoded_map["instructions"],

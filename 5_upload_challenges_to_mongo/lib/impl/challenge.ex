@@ -17,7 +17,7 @@ defmodule MongoChallengesUploader.Impl.Challenge do
     attribute(:programming_language, String.t())
     attribute(:quality, String.t())
     attribute(:summary, String.t())
-    attribute(:tags, list(String.t())) 
+    attribute(:tags, list(String.t()))
     attribute(:title, String.t())
   end
 

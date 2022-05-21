@@ -8,6 +8,12 @@ We're adding a new elixir module to connect to mongo and upload the challenges t
 mix deps.get
 ```
 
+You may want to create a container for local testing before pushing to production DBS. For that you can use Docker:
+
+```bash
+docker run -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
+```
+
 ## 5.2 Upload the Challenges
 
 First you need to start the iex session

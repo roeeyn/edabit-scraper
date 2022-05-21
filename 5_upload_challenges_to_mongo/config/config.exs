@@ -1,7 +1,7 @@
 import Config
 
 # TODO: replace with your own values
-config :mongo_todos, MongoTodos.Repo,
+config :mongo_challenges_uploader, MongoChallengesUploader.Repo,
   url: "mongodb://root:root@localhost:27017/?authMechanism=DEFAULT",
   timeout: 60_000,
   database: "my_local_db",

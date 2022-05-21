@@ -20,13 +20,12 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-upload_challenges_to_mongo-*.tar
+mongo_challenges_uploader-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
 
-# Assets
-/assets/java/*json
-/assets/javascript/*json
-/assets/python/*json
-/assets/sample/*json
+assets/javascript/*.json
+assets/python/*.json
+assets/java/*.json
+assets/sample/*.json

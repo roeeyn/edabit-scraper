@@ -2,7 +2,7 @@ import Config
 
 # TODO: replace with your own values
 config :mongo_challenges_uploader, MongoChallengesUploader.Repo,
-  url: "mongodb://root:root@localhost:27017/?authMechanism=DEFAULT",
+  url: "mongodb://localhost:27017",
   timeout: 60_000,
   database: "my_local_db",
   idle_interval: 10_000,

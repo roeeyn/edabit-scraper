@@ -10,6 +10,7 @@ defmodule MongoChallengesUploader.Application do
     children = [
       # Starts a worker by calling: MongoChallengesUploader.Worker.start_link(arg)
       # {MongoChallengesUploader.Worker, arg}
+      {Mongo, MongoChallengesUploader.Repo.config()}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

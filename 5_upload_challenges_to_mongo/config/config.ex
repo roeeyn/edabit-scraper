@@ -12,4 +12,3 @@ config :mongo_todos, MongoTodos.Repo,
   username: "root",
   password: "root",
   auth_source: "admin"
-

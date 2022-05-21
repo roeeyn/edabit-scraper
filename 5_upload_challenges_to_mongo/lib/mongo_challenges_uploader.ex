@@ -1,18 +1,5 @@
 defmodule MongoChallengesUploader do
-  @moduledoc """
-  Documentation for `MongoChallengesUploader`.
-  """
+  alias MongoChallengesUploader.Impl.Uploader
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> MongoChallengesUploader.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  defdelegate upload_challenges_from_asset(folder_name), to: Uploader
 end

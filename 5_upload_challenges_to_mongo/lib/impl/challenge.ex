@@ -43,4 +43,8 @@ defmodule MongoChallengesUploader.Impl.Challenge do
       :ok
     end
   end
+
+  def drop_collection() do
+    Mongo.drop_collection(:mongo, @collection)
+  end
 end

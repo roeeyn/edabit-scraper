@@ -1,7 +1,7 @@
 # Edabit Scrapper
 
 > **Note**
-> If you only want the output of the scrapping, you can get the json [here](https://github.com/roeeyn/edabit-scrapper/tree/master/4_process_raw_challenge_data_response/assets).
+> If you only want the output of the scrapping, you can get the json [here](https://github.com/roeeyn/edabit-scrapper/releases/tag/v1.0.0), in the assets section.
 
 ## Steps I followed
 

@@ -11,7 +11,7 @@ mix deps.get
 You may want to create a container for local testing before pushing to production DBS. For that you can use Docker:
 
 ```bash
-docker run -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo
+docker run --rm -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root -v hackademy:/data/db -d --name hackademy-db mongo
 ```
 
 ## 5.2 Upload the Challenges

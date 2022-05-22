@@ -1,6 +1,9 @@
 # Edabit Scrapper
 
-## Steps
+> **Note**
+> If you only want the output of the scrapping, you can get the json [here](https://github.com/roeeyn/edabit-scrapper/tree/master/4_process_raw_challenge_data_response/assets).
+
+## Steps I followed
 
 Here are the detailed steps of how I accomplished scrapping the Edabit site.
 

@@ -7,8 +7,8 @@
 
 Here are the detailed steps of how I accomplished scrapping the Edabit site.
 
-- [Step 1](1_get_indexes/)
-- [Step 2](2_process_raw_results/)
-- [Step 3](3_get_challenges_details/)
-- [Step 4](4_process_raw_challenge_data_response/)
-- [Step 5](5_upload_challenges_to_mongo/)
+- [Step 1 - Get Indexes](1_get_indexes/)
+- [Step 2 - Process Raw Results](2_process_raw_results/)
+- [Step 3 - Get Challenges Details](3_get_challenges_details/)
+- [Step 4 - Process Raw Challenge Data Response](4_process_raw_challenge_data_response/)
+- [Step 5 - Upload Challenges To Mongo](5_upload_challenges_to_mongo/)
